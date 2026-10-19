@@ -1,5 +1,7 @@
 # ViralForecast Skill
 
+[![tests](https://github.com/zyf628768-cmyk/viralforecast-skill/actions/workflows/test.yml/badge.svg)](https://github.com/zyf628768-cmyk/viralforecast-skill/actions/workflows/test.yml)
+
 Local-first pre-publication video assessment and experimental account forecasting. MIT licensed. **No paid API or data upload is required.** This release is a Python CLI and reusable agent skill, not a hosted upload website.
 
 ## 中文说明
@@ -64,6 +66,7 @@ The release builder includes source, docs, tests, schemas and explicitly synthet
 
 Use [SKILL.md](SKILL.md) as the skill entrypoint after installing this package. To make it discoverable in another Codex installation, place the project folder under that installation's configured skills directory; no automatic global installation is performed here. The skill calls the actual CLI and preserves mode, provenance, abstention and privacy boundaries.
 
-Actual local test results, repaired issues, environment versions and unexecuted compatibility checks are documented in [docs/TEST_REPORT.md](docs/TEST_REPORT.md). GitHub Actions config targets Windows and Ubuntu on Python 3.10/3.12; it has not run on GitHub as part of this local delivery.
+Actual local test results, repaired issues and environment versions are documented in [docs/TEST_REPORT.md](docs/TEST_REPORT.md). The subsequent GitHub publication ran all four Windows/Ubuntu and Python 3.10/3.12 combinations, each with 42 tests passing; see [docs/CI_REPORT.md](docs/CI_REPORT.md).
 
-See [architecture](docs/architecture.md), [methods and limitations](docs/methodology.md), [privacy](docs/privacy.md), [changelog](CHANGELOG.md) and [release notes](docs/RELEASE_NOTES.md). Suggested repository: **viralforecast-skill**. Public publishing is performed only when explicitly requested by the user.
+See [architecture](docs/architecture.md), [methods and limitations](docs/methodology.md), [privacy](docs/privacy.md), [changelog](CHANGELOG.md) and [release notes](docs/RELEASE_NOTES.md). Public repository: [viralforecast-skill](https://github.com/zyf628768-cmyk/viralforecast-skill). Publishing was explicitly requested by the user after local development.
+
