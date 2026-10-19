@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "viralforecast-skill"
-version = "0.1.0"
+version = "0.2.0"
 description = "Local pre-publication content heuristics and account-level temporal forecasting"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -14,6 +14,7 @@ dependencies = ["numpy>=1.24,<3", "Pillow>=10,<14"]
 [project.optional-dependencies]
 test = ["pytest>=8,<10", "jsonschema>=4.20,<5"]
 media = ["imageio-ffmpeg>=0.5,<0.7"]
+understanding = ["torch>=2.6,<3", "torchvision>=0.21,<1", "transformers>=4.48,<5", "faster-whisper>=1.1,<2", "av>=11,<17", "opencv-python-headless>=4.10,<5"]
 
 [project.scripts]
 viralforecast = "viralforecast.cli:main"

@@ -1,10 +1,12 @@
 # Forecast methods and limits / 预测方法与局限
 
+Version 0.2 adds optional learned local perception and built-in ASR; see [local-understanding.md](local-understanding.md). The metadata-only behavior described below remains the default. Perception outputs are separately labeled and do not change the historical statistical feature contract.
+
 ## Mode A
 
 Scores use hand-written formulas in `analysis.py`: first-three-second score combines early scene cuts, title presence and question marks; completion proxy rewards configured duration; interaction proxy uses questions/hashtags; pacing uses scene-cut rate versus an editorial target. Relative potential is a weighted mean (30% hook, 30% duration proxy, 20% interaction, 20% pacing). These are arbitrary editorial aids, not measurements of real retention or comparative percentile ranks. No view count or viral probability is produced.
 
-Frame extraction and scene detection are implemented. Cover brightness/contrast and text/transcript character overlap are implemented. Object/action understanding, semantic video-copy alignment, emotion, OCR, safety screening and content truthfulness are **not implemented**. Timestamped transcripts can be imported; a trusted local `module:function` can transcribe a WAV, but no ASR model is shipped or downloaded. The built-in sine-wave demo uses an illustrative supplied transcript and is not speech-recognition evidence.
+Frame extraction, scene detection, cover brightness/contrast and text/transcript character overlap are implemented. With `--understand`, local learned models add object boxes, temporal action candidates, scene semantic matching, image-copy similarity and visible-expression cues. With `--asr`, local Whisper generates timestamped speech segments; weights are downloaded separately and explicitly. Imported transcripts and trusted local adapters remain alternatives. OCR, safety screening and content truthfulness verification are not implemented. The built-in sine-wave demo's supplied transcript is illustrative and is not speech-recognition evidence.
 
 ## Mode B
 

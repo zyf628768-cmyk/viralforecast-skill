@@ -32,9 +32,20 @@ def text_features(title, caption, segments):
 
 
 def analyze(video, title="", caption="", platform="tiktok", output="media", config=None,
-            transcript_path=None, adapter=None, cover=None):
+            transcript_path=None, adapter=None, cover=None, understand=False, asr=False,
+            models_dir="models", language=None, semantic_labels=None):
+    if asr and (transcript_path or adapter):
+        raise ForecastError("Choose built-in ASR, transcript import or local adapter, not multiple sources")
     r = rules(platform, config)
     m = inspect_video(video, output, transcript_path, adapter, cover)
+    if asr:
+        from .speech import transcribe
+        m["transcript"] = transcribe(m["audio_path"], models_dir, language)
+    if understand:
+        from .understanding import understand as run_understanding
+        m["understanding"] = run_understanding(video, m, title, caption, models_dir, semantic_labels)
+        m["visual_semantics"] = "local_models"
+        m["analysis_scope"] += "; local learned object/action/scene/expression models"
     f = text_features(title, caption, m["transcript"]["segments"])
     f.update({"duration_seconds": m["duration_seconds"], "cut_rate": m["cut_rate"]})
     def clamp(x):
@@ -45,7 +56,7 @@ def analyze(video, title="", caption="", platform="tiktok", output="media", conf
     interaction = clamp(35 + min(25, f["question_count"] * 12) + min(15, f["hashtag_count"] * 5))
     scores = {"relative_potential": clamp(.3 * hook + .3 * completion + .2 * interaction + .2 * pace),
               "first_3_seconds": hook, "completion_potential": completion, "interaction_potential": interaction, "pacing": pace}
-    risks = ["No visual semantics, emotion, topic safety, copyright or factual accuracy verification.",
+    risks = ["No topic safety, copyright or factual accuracy verification; expression cues do not reveal true emotions." if understand else "Local vision models were not requested; metadata does not reveal visual subjects or true emotions.",
              "Platform rule values are editable editorial defaults, not official limits or learned ranking rules."]
     tips = ["Review the first 3 seconds manually; state the promised benefit early.",
             "Test one title/cover variation at a time and record mature outcomes."]
@@ -63,4 +74,4 @@ def analyze(video, title="", caption="", platform="tiktok", output="media", conf
                     platform=platform, title=title, caption=caption, features=f, media=m, scores=scores,
                     rules=r, risks=risks, suggestions=tips,
                     limitations=["Scores are hand-written proxies, not audience retention estimates or success probabilities.",
-                                 "Text/transcript overlap is lexical, not semantic video-text alignment."])
+                                 "Text/transcript overlap is lexical; optional visual copy alignment is separately reported in media.understanding."])

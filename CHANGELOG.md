@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.2.0 — 2026-10-19
+
+- Rewritten Chinese introduction and simplified homepage wording.
+- Optional local object detection, temporal action recognition, CLIP scene/copy semantics and face-expression cues.
+- Built-in CPU multilingual Whisper ASR, explicit model downloads, pinned snapshots and integrity checks.
+- No-face/uncertain states and separate model provenance; statistical forecasting features remain unchanged.
+
 ## 0.1.0 — 2026-10-19
 
 - Initial local CLI and reusable skill; seven configurable platform profiles.

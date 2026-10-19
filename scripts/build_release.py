@@ -8,7 +8,8 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def main():
-    target = ROOT / 'dist/viralforecast-skill-0.1.0.zip'
+    from viralforecast import __version__
+    target = ROOT / f'dist/viralforecast-skill-{__version__}.zip'
     target.parent.mkdir(exist_ok=True)
     allowed = ['viralforecast','tests','schemas','docs','scripts','.github','examples','validation']
     top = ['README.md','SKILL.md','LICENSE','pyproject.toml','.gitignore','CHANGELOG.md']

@@ -46,7 +46,7 @@ def test_video_metadata_and_no_semantics(fixtures,tmp_path):
     assert len(m["keyframes"])>=3
     assert all(Path(f["path"]).stat().st_size>0 for f in m["keyframes"])
     assert Path(m["audio_path"]).stat().st_size>100
-    assert m["visual_semantics"]=="not_implemented"
+    assert m["visual_semantics"]=="not_run"
     assert m["transcript"]["status"]=="imported"
 
 

@@ -1,4 +1,4 @@
-"""FFmpeg media processing. No remote calls or inferred visual semantics."""
+"""FFmpeg metadata processing; learned perception is a separate opt-in module."""
 import importlib
 import os
 import re
@@ -120,4 +120,4 @@ def inspect_video(path, output, transcript_path=None, adapter=None, cover=None):
             "scene_times": cuts, "scene_count": len(cuts), "first_3s_cuts": sum(t < 3 for t in cuts),
             "cut_rate": len(cuts) / duration, "keyframes": frames, "audio_path": str(audio) if audio else None,
             "transcript": tr, "cover": cover_metrics,
-            "visual_semantics": "not_implemented", "analysis_scope": "metadata, pixel scene changes, cover brightness/contrast and optional supplied transcription"}
+            "visual_semantics": "not_run", "analysis_scope": "metadata, pixel scene changes, cover brightness/contrast and optional supplied transcription"}

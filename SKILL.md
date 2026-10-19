@@ -7,7 +7,7 @@ description: Analyze unpublished local short videos and copy using transparent h
 
 Use the installed `viralforecast` CLI from this project. See [README.md](README.md) for setup and runnable commands, [docs/data.md](docs/data.md) for CSV definitions and [docs/methodology.md](docs/methodology.md) for statistical limits.
 
-Analyze the user's local video, title, caption and optional cover/transcript with `viralforecast analyze`. Do not infer visual subjects, emotions, safety or spoken meaning from scene counts or file metadata. The built-in implementation has no visual semantic model and does not bundle speech recognition weights. A local transcription adapter is an explicit opt-in extension; inspect and trust its code before use.
+Analyze the user's local video, title, caption and optional cover/transcript with `viralforecast analyze`. For learned object/action/scene and visible-expression analysis use `--understand`; for built-in local Whisper transcription use `--asr`. Install `.[understanding]` and explicitly download model weights using `python -m viralforecast.models --download --directory models` before running these flags. See [docs/local-understanding.md](docs/local-understanding.md). Inference reads local verified files only. No visual or spoken meaning can be inferred from metadata-only results. Visible expressions never establish true feelings, mood, intent or mental health. Missing faces and uncertain predictions must remain explicit. A custom transcription adapter is an opt-in alternative; inspect and trust its code before use.
 
 Without history, report scores as **heuristic, not statistically calibrated**. Do not turn them into views, retention percentages or viral probabilities. The CLI deliberately emits no such forecasts in mode A.
 

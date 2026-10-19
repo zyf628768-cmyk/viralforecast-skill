@@ -1,4 +1,10 @@
-# Release 0.1.0
+# Release 0.2.0
+
+Adds explicitly enabled local object detection, temporal action recognition, scene/copy matching, visible-expression cues and built-in multilingual Whisper transcription. Run `python -m viralforecast.models --download --directory models` after installing `.[understanding]`, then `viralforecast analyze --understand --asr --models-dir models ...`. Downloaded weights remain separate from the MIT source archive. See `local-understanding.md` and `UNDERSTANDING_TEST_REPORT.md` for boundaries and actual validation.
+
+The Chinese introduction is rewritten around the creator's workflow. Model scores are separated from heuristic reach scores and are not calibrated correctness or virality probabilities. Expressions never establish a person's real emotions.
+
+# Release 0.1.0 (historical)
 
 Suggested repository name: `viralforecast-skill`.
 

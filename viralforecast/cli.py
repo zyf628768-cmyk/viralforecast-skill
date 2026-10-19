@@ -12,7 +12,8 @@ from .reporting import validate_report, write_reports
 
 def parser():
     p = argparse.ArgumentParser(prog="viralforecast", description="Local content heuristics and experimental account forecasts")
-    p.add_argument("--version", action="version", version="0.1.0")
+    from . import __version__
+    p.add_argument("--version", action="version", version=__version__)
     cmds = p.add_subparsers(dest="command", required=True)
     a = cmds.add_parser("analyze", help="Mode A: metadata/text heuristics, never view predictions")
     a.add_argument("--video", required=True)
@@ -23,6 +24,11 @@ def parser():
     a.add_argument("--transcript", help="Local timestamped transcript JSON")
     a.add_argument("--transcriber", help="Trusted local Python module:function accepting a WAV path; opt-in")
     a.add_argument("--rules", help="Custom editorial rule JSON")
+    a.add_argument("--understand", action="store_true", help="Run local object/action/scene/expression models")
+    a.add_argument("--asr", action="store_true", help="Run built-in local Whisper transcription")
+    a.add_argument("--models-dir", default="models", help="Previously downloaded model directory")
+    a.add_argument("--language", help="ASR language code, e.g. zh or en; default automatic")
+    a.add_argument("--semantic-labels", help="JSON array of English scene descriptions for CLIP")
     for name in ("predict", "backtest"):
         c = cmds.add_parser(name)
         c.add_argument("--history", required=True)
@@ -49,7 +55,8 @@ def main(argv=None):
     try:
         if args.command == "analyze":
             data = analyze(args.video, args.title, args.caption, args.platform, Path(args.out) / "media", args.rules,
-                           args.transcript, args.transcriber, args.cover)
+                           args.transcript, args.transcriber, args.cover, args.understand, args.asr,
+                           args.models_dir, args.language, read_json(args.semantic_labels) if args.semantic_labels else None)
         elif args.command in ("predict", "backtest"):
             rows = load_history(args.history, args.account, args.platform)
             if args.command == "predict":

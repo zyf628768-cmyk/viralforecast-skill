@@ -16,7 +16,7 @@
      "then": {"required": ["mode", "assessment_type", "features", "scores", "media", "platform"],
        "properties": {"mode": {"const": "A"}, "assessment_type": {"const": "heuristic_not_statistically_calibrated"},
          "scores": {"type": "object", "required": ["relative_potential", "first_3_seconds", "completion_potential", "interaction_potential", "pacing"], "additionalProperties": {"type": "number", "minimum": 0, "maximum": 100}},
-         "media": {"type": "object", "required": ["duration_seconds", "visual_semantics", "keyframes"], "properties": {"visual_semantics": {"const": "not_implemented"}}}},
+         "media": {"type": "object", "required": ["duration_seconds", "visual_semantics", "keyframes"], "properties": {"visual_semantics": {"enum": ["not_implemented", "not_run", "local_models"]}}}},
        "not": {"required": ["forecasts"]}}},
     {"if": {"properties": {"kind": {"const": "prediction"}}},
      "then": {"required": ["mode", "status", "as_of", "account_id", "eligible_rows", "data_source", "forecasts"],
