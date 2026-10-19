@@ -1,5 +1,7 @@
 # Actual local test report / 真实测试报告
 
+Historical report for version 0.1. For the later implemented local vision/ASR capabilities and real-model tests, see [UNDERSTANDING_TEST_REPORT.md](UNDERSTANDING_TEST_REPORT.md). For remote CI execution, see [CI_REPORT.md](CI_REPORT.md).
+
 Execution date: 2026-10-19 (Asia/Shanghai). This report describes actual local commands and generated artifacts; it does not describe a GitHub CI run.
 
 ## Environment
@@ -51,3 +53,4 @@ Probability Brier/ECE/reliability and baseline comparisons are stored in the bac
 Only the local Windows/Python 3.12 environment was actually executed. GitHub Actions is configured for Windows/Ubuntu × Python 3.10/3.12 but has not run remotely. macOS, other interpreters, large videos, GPU inference, real ASR adapters, real account forecasting and production workloads were not tested. The local stub adapter test verifies the interface, not speech-recognition quality. There is no built-in visual semantic model, OCR, hosted UI or paid API dependency.
 
 External FFmpeg/FFprobe are not bundled in source releases and must be installed/discovered as documented. The source archive and SHA256 are generated in local `dist/` and copied to `outputs/` for delivery. No GitHub publication or user-data upload occurred.
+

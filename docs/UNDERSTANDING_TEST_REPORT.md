@@ -8,6 +8,8 @@ The ordinary suite initially passed 48 tests with the large-model integration te
 
 Actual full-model result: **49 passed in 25.97s**, including the downloaded-model integration test. The saved positive-model JSON also passed the output Schema and exact HTML payload check; the expected spoken phrase was present in the actual ASR output.
 
+Final source recheck: **49 passed in 32.89s**. The updated [four-environment CI run](https://github.com/zyf628768-cmyk/viralforecast-skill/actions/runs/39224579401) completed successfully on Windows/Ubuntu × Python 3.10/3.12. CI omits large local weights and therefore explicitly skips the single real-weight integration case; the local result above includes it.
+
 An actual CLI run used a public-domain scikit-image astronaut test image in a short MP4 with locally synthesized Windows SAPI speech. Results:
 
 - Object detector returned a person box (model score about 0.878).
@@ -22,3 +24,4 @@ First ASR execution failed because PyAV 19 removed the `metadata_errors` argumen
 The no-face, non-speech fixture is a generated two-color video with sine audio. The optional real integration test checks all vision modules execute, no faces produce an explicit no-face result, and non-speech produces no transcript. Missing manifest/files, corrupted model hashes, invalid scores and conflicting transcript sources are covered separately.
 
 Sources: [scikit-image public-domain fixture description](https://scikit-image.org/docs/stable/api/skimage.data), [model details and setup](local-understanding.md). Positive fixture media, raw local logs and model caches are retained locally and are not publicly uploaded. The earlier CI report is for version 0.1; current CI validates the lightweight suite without downloading heavy model weights. None of these checks establishes audience prediction accuracy or broad scene/action/expression/ASR accuracy.
+

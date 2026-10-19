@@ -62,7 +62,7 @@ From the repository root, generate explicitly simulated history, a valid two-sce
 
 Each command writes all three report formats. `analyze` also stores extracted stills and a WAV under its output folder. `scripts/run_demo.ps1` performs these commands, a small-history downgrade, and expected-error CLI checks with real logs. It uses the current project's locally downloaded FFprobe when present, otherwise normal executable discovery. No user data is uploaded.
 
-Custom platform editorial rules: `--rules examples/rules.json`. Optional transcription: `--transcriber your_local_module:transcribe`; the function receives the generated mono WAV path and returns `{"segments":[{"start":0,"end":1,"text":"..."}]}`. Use only a trusted module; imported code has your Python process permissions. No model/API call occurs unless your chosen adapter implements it. Transcript import and adapter are mutually exclusive.
+Custom platform editorial rules: `--rules examples/rules.json`. Optional custom transcription: `--transcriber your_local_module:transcribe`; the function receives the generated mono WAV path and returns `{"segments":[{"start":0,"end":1,"text":"..."}]}`. Use only a trusted module; imported code has your Python process permissions. This custom adapter is separate from the built-in `--asr` implementation. Choose one transcript source: import, custom adapter or built-in ASR.
 
 Historical CSV columns and exact feature definitions are in [docs/data.md](docs/data.md). Use `data_source=real` only for your own real records; this declaration is not externally verified. Platforms use CLI IDs `tiktok`, `youtube-shorts`, `instagram-reels`, `douyin`, `kuaishou`, `xiaohongshu`, `bilibili`. `--as-of` is the intended publication time; date-only/naive dates are UTC.
 
@@ -82,3 +82,4 @@ Actual local test results, repaired issues and environment versions are document
 Version 0.2 local model execution and its repaired dependency issue are recorded in [docs/UNDERSTANDING_TEST_REPORT.md](docs/UNDERSTANDING_TEST_REPORT.md). The original CI report is historical; the current Actions run checks the updated lightweight suite and marks the optional large-model test as skipped when weights are absent.
 
 See [architecture](docs/architecture.md), [methods and limitations](docs/methodology.md), [privacy](docs/privacy.md), [changelog](CHANGELOG.md) and [release notes](docs/RELEASE_NOTES.md). Public repository: [viralforecast-skill](https://github.com/zyf628768-cmyk/viralforecast-skill). Publishing was explicitly requested by the user after local development.
+
