@@ -5,13 +5,14 @@
   "required": ["schema_version", "kind", "limitations"],
   "properties": {
     "schema_version": {"const": "1.0"},
-    "kind": {"enum": ["analysis", "prediction", "backtest", "comparison"]},
+    "kind": {"enum": ["analysis", "prediction", "backtest", "comparison", "trends"]},
     "mode": {"enum": ["A", "B"]},
     "limitations": {"type": "array", "items": {"type": "string"}},
     "features": {"$ref": "#/$defs/features"},
     "forecasts": {"type": ["object", "null"]}
   },
   "allOf": [
+    {"if": {"properties": {"kind": {"const": "trends"}}}, "then": {"required": ["as_of", "platform", "coverage", "heat", "similar_content", "improvements", "data_source"], "properties": {"heat": {"type": "object", "required": ["type", "internal_recommendation_exposure"], "properties": {"type": {"const": "sample_relative_attention_proxy"}, "internal_recommendation_exposure": {"type": "null"}}}}}},
     {"if": {"properties": {"kind": {"const": "analysis"}}},
      "then": {"required": ["mode", "assessment_type", "features", "scores", "media", "platform"],
        "properties": {"mode": {"const": "A"}, "assessment_type": {"const": "heuristic_not_statistically_calibrated"},

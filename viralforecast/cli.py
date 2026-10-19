@@ -29,6 +29,18 @@ def parser():
     a.add_argument("--models-dir", default="models", help="Previously downloaded model directory")
     a.add_argument("--language", help="ASR language code, e.g. zh or en; default automatic")
     a.add_argument("--semantic-labels", help="JSON array of English scene descriptions for CLIP")
+    a.add_argument("--trends-csv", help="Platform-exported similar-content snapshots")
+    a.add_argument("--as-of", help="Observation cutoff for imported trend context")
+    a.add_argument("--trend-days", type=int, default=7)
+    a.add_argument("--min-similarity", type=float, default=.15)
+    a.add_argument("--exclude-account", help="Exclude own account from peer trends")
+    t = cmds.add_parser("trends", help="Analyze recent peer traffic and evidence-based test suggestions from CSV")
+    t.add_argument("--csv", required=True)
+    t.add_argument("--analysis", required=True)
+    t.add_argument("--as-of", required=True)
+    t.add_argument("--days", type=int, default=7)
+    t.add_argument("--min-similarity", type=float, default=.15)
+    t.add_argument("--exclude-account")
     for name in ("predict", "backtest"):
         c = cmds.add_parser(name)
         c.add_argument("--history", required=True)
@@ -56,7 +68,11 @@ def main(argv=None):
         if args.command == "analyze":
             data = analyze(args.video, args.title, args.caption, args.platform, Path(args.out) / "media", args.rules,
                            args.transcript, args.transcriber, args.cover, args.understand, args.asr,
-                           args.models_dir, args.language, read_json(args.semantic_labels) if args.semantic_labels else None)
+                           args.models_dir, args.language, read_json(args.semantic_labels) if args.semantic_labels else None,
+                           args.trends_csv, args.as_of, args.trend_days, args.min_similarity, args.exclude_account)
+        elif args.command == "trends":
+            from .trends import trends
+            data = trends(args.csv, read_json(args.analysis), args.as_of, args.days, args.min_similarity, args.exclude_account)
         elif args.command in ("predict", "backtest"):
             rows = load_history(args.history, args.account, args.platform)
             if args.command == "predict":

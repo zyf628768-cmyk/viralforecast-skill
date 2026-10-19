@@ -24,4 +24,3 @@ First ASR execution failed because PyAV 19 removed the `metadata_errors` argumen
 The no-face, non-speech fixture is a generated two-color video with sine audio. The optional real integration test checks all vision modules execute, no faces produce an explicit no-face result, and non-speech produces no transcript. Missing manifest/files, corrupted model hashes, invalid scores and conflicting transcript sources are covered separately.
 
 Sources: [scikit-image public-domain fixture description](https://scikit-image.org/docs/stable/api/skimage.data), [model details and setup](local-understanding.md). Positive fixture media, raw local logs and model caches are retained locally and are not publicly uploaded. The earlier CI report is for version 0.1; current CI validates the lightweight suite without downloading heavy model weights. None of these checks establishes audience prediction accuracy or broad scene/action/expression/ASR accuracy.
-

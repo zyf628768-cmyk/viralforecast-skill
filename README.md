@@ -12,6 +12,9 @@ Local-first pre-publication video assessment and experimental account forecastin
 - **模式 B，有历史数据**：至少 120 条同账号、同平台且 7 天指标已成熟的真实记录；输出 24h/7d 播放量点估计与名义 90% 区间、互动率，以及超过历史播放量中位数 3/5 倍的概率估计。概率校准支持不足时返回 null；记录不足或时间划分不足时降级。模型必须先与简单历史中位数比较，并可在后续样本外回测中检查是否真的更好。
 - **看画面，也听内容**：启用本地理解扩展，即可进行对象检测、短片段动作识别、场景语义与文案匹配、可见表情线索分析，并用内置 Whisper 自动生成语音转写。基础模式仍支持关键帧、镜头切换、音轨和封面特征分析；模型在本机运行，内容无需上传。
 - JSON、Markdown、HTML 同时生成；`compare` 对照发布后成熟指标分析误差；`backtest` 输出时间顺序样本外结果与概率校准诊断。
+- **看同类内容最近怎么涨**：导入平台导出的 CSV 快照，筛选与你内容相似的样本，比较近期播放增量、样本相对热度和前后窗口走势，再找出值得测试的开场、时长、镜头节奏与标题调整。支持七个平台；内部推流曝光不可见时保持为空，不把样本热度冒充平台整体趋势。
+
+[下载 v0.2.0 完整 Release](https://github.com/zyf628768-cmyk/viralforecast-skill/releases/tag/v0.2.0) · [中文安装与使用说明](docs/QUICKSTART.zh-CN.md)
 
 
 ## English overview
@@ -66,6 +69,17 @@ Custom platform editorial rules: `--rules examples/rules.json`. Optional custom 
 
 Historical CSV columns and exact feature definitions are in [docs/data.md](docs/data.md). Use `data_source=real` only for your own real records; this declaration is not externally verified. Platforms use CLI IDs `tiktok`, `youtube-shorts`, `instagram-reels`, `douyin`, `kuaishou`, `xiaohongshu`, `bilibili`. `--as-of` is the intended publication time; date-only/naive dates are UTC.
 
+## 同类内容近期流量 / Recent peer traffic
+
+Use platform-exported snapshot CSVs, not the historical prediction CSV format:
+
+```powershell
+.\.venv\Scripts\python.exe examples/generate_trends.py --out examples/data/synthetic_trends.csv
+.\.venv\Scripts\viralforecast.exe trends --csv examples/data/synthetic_trends.csv --analysis outputs/demo/mode-a/analysis.json --as-of 2026-10-19T00:00:00Z --days 7 --out outputs/trends
+```
+
+Match the CSV platform and title/caption to the saved analysis. Add `--trends-csv file.csv --as-of timestamp` to `analyze` to attach the same context directly. See [中文使用说明](docs/QUICKSTART.zh-CN.md) for all required fields, snapshot windows, sample support and evidence-based improvement suggestions. No platform API key or upload is required. Observed attention is a sample-relative proxy, not internal recommendation exposure, a global trend index or a promised traffic uplift.
+
 ## Tests, packaging and Skill
 
 ```powershell
@@ -75,6 +89,8 @@ Historical CSV columns and exact feature definitions are in [docs/data.md](docs/
 
 The release builder includes source, docs, tests, schemas and explicitly synthetic examples/reports plus validation records when present. It excludes virtual environments, external binaries and arbitrary private outputs. Local archives go to `dist/`; a user-facing copy is placed in `outputs/`.
 
+For public GitHub Release assets, use `python scripts/build_public_release.py`. This separate allowlist omits raw local validation records and private output folders, checks that included CSV examples are explicitly synthetic, and emits a ZIP, SHA256 sidecar and internal file manifest. The requested v0.2.0 Release is created only after the marked release commit passes the four-environment test workflow.
+
 Use [SKILL.md](SKILL.md) as the skill entrypoint after installing this package. To make it discoverable in another Codex installation, place the project folder under that installation's configured skills directory; no automatic global installation is performed here. The skill calls the actual CLI and preserves mode, provenance, abstention and privacy boundaries.
 
 Actual local test results, repaired issues and environment versions are documented in [docs/TEST_REPORT.md](docs/TEST_REPORT.md). The subsequent GitHub publication ran all four Windows/Ubuntu and Python 3.10/3.12 combinations, each with 42 tests passing; see [docs/CI_REPORT.md](docs/CI_REPORT.md).
@@ -82,4 +98,3 @@ Actual local test results, repaired issues and environment versions are document
 Version 0.2 local model execution and its repaired dependency issue are recorded in [docs/UNDERSTANDING_TEST_REPORT.md](docs/UNDERSTANDING_TEST_REPORT.md). The original CI report is historical; the current Actions run checks the updated lightweight suite and marks the optional large-model test as skipped when weights are absent.
 
 See [architecture](docs/architecture.md), [methods and limitations](docs/methodology.md), [privacy](docs/privacy.md), [changelog](CHANGELOG.md) and [release notes](docs/RELEASE_NOTES.md). Public repository: [viralforecast-skill](https://github.com/zyf628768-cmyk/viralforecast-skill). Publishing was explicitly requested by the user after local development.
-

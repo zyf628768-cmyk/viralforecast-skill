@@ -18,6 +18,11 @@
     "models_dir": {"type": "string"},
     "language": {"type": "string"},
     "semantic_labels": {"type": "string"},
+    "trends_csv": {"type": "string"},
+    "as_of": {"type": "string"},
+    "trend_days": {"type": "integer", "minimum": 1, "maximum": 30},
+    "min_similarity": {"type": "number", "minimum": 0, "maximum": 1},
+    "exclude_account": {"type": "string"},
     "transcriber": {"type": "string", "pattern": "^[A-Za-z_][A-Za-z0-9_.]*:[A-Za-z_][A-Za-z0-9_]*$"}
   }
 }

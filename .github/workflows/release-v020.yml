@@ -1,0 +1,40 @@
+name: publish-v0.2.0
+on:
+  workflow_run:
+    workflows: [tests]
+    types: [completed]
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  publish:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event.workflow_run.conclusion == 'success' &&
+      contains(github.event.workflow_run.head_commit.message, '[release v0.2.0]'))
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Package public source and verify archive
+        run: python scripts/build_public_release.py
+      - name: Create requested release and upload assets
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_COMMIT: ${{ github.event.workflow_run.head_sha || github.sha }}
+        run: |
+          gh release create v0.2.0 \
+            dist/viralforecast-skill-0.2.0.zip \
+            dist/viralforecast-skill-0.2.0.zip.sha256 \
+            docs/QUICKSTART.zh-CN.md \
+            --target "$RELEASE_COMMIT" \
+            --title "ViralForecast v0.2.0" \
+            --notes-file docs/RELEASE_v0.2.0.md

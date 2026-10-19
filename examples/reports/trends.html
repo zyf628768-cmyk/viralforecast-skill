@@ -1,0 +1,860 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'">
+<title>ViralForecast trends</title>
+<style>body{font:16px/1.6 system-ui,sans-serif;max-width:1100px;margin:32px auto;padding:0 20px;background:#f7f8fb;color:#17243a}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:white;padding:24px;border:1px solid #cdd6e5}.warning{background:#fff1cd;padding:16px}</style></head>
+<body><h1>ViralForecast · trends</h1><p class="warning">Heuristic scores are not calibrated predictions. Statistical estimates are experimental.
+Data source: synthetic. Synthetic data demonstrates software behavior only.</p>
+<section><h2>同类内容近期流量</h2><ul><li>截止时间：2026-10-19T00:00:00+00:00；窗口：7.0 天</li><li>相似内容：24 条；可测量近期增速：24 条</li><li>同类内容播放增速中位数：250.00 次/小时</li><li>相对导入样本的热度比：2.78</li><li>同批样本前后窗口增速比：2.00</li></ul><h3>值得测试的改进</h3><ul><li>同类高增速样本的视频时长中位数约为 17.50秒。可制作一个接近该范围的版本，与当前版本做单变量对照。</li><li>同类高增速样本的镜头变化频率中位数约为 0.30次/秒。可制作一个接近该范围的版本，与当前版本做单变量对照。</li><li>前 3 秒启发式评分偏低：把核心结果、冲突或收益前置，测试不同开场。</li></ul><p>样本相对热度不等于平台内部推流或全平台趋势；改进建议是待验证的实验。</p></section><pre>{
+  &quot;schema_version&quot;: &quot;1.0&quot;,
+  &quot;kind&quot;: &quot;trends&quot;,
+  &quot;platform&quot;: &quot;tiktok&quot;,
+  &quot;as_of&quot;: &quot;2026-10-19T00:00:00+00:00&quot;,
+  &quot;window_days&quot;: 7.0,
+  &quot;query&quot;: {
+    &quot;title&quot;: &quot;视频开场技巧 video opening tips&quot;,
+    &quot;caption&quot;: &quot;提升内容吸引力 how to improve an opening #video&quot;,
+    &quot;minimum_lexical_similarity&quot;: 0.15,
+    &quot;excluded_account&quot;: null
+  },
+  &quot;status&quot;: &quot;measured_sample&quot;,
+  &quot;data_source&quot;: &quot;synthetic&quot;,
+  &quot;coverage&quot;: {
+    &quot;recent_sample_posts&quot;: 40,
+    &quot;similar_posts&quot;: 24,
+    &quot;similar_with_velocity&quot;: 24,
+    &quot;baseline_with_velocity&quot;: 40,
+    &quot;paired_windows&quot;: 24,
+    &quot;excluded_future_snapshots&quot;: 0
+  },
+  &quot;heat&quot;: {
+    &quot;type&quot;: &quot;sample_relative_attention_proxy&quot;,
+    &quot;similar_median_views_per_hour&quot;: 250.0,
+    &quot;sample_baseline_median_views_per_hour&quot;: 90.0,
+    &quot;relative_heat_ratio&quot;: 2.7777777777777777,
+    &quot;band&quot;: &quot;higher_than_sample&quot;,
+    &quot;paired_window_momentum_ratio&quot;: 2.0,
+    &quot;internal_recommendation_exposure&quot;: null
+  },
+  &quot;age_banded_view_summaries&quot;: {
+    &quot;under_24h&quot;: {
+      &quot;posts&quot;: 0,
+      &quot;median_observed_views&quot;: null
+    },
+    &quot;24_to_72h&quot;: {
+      &quot;posts&quot;: 0,
+      &quot;median_observed_views&quot;: null
+    },
+    &quot;3_to_7d&quot;: {
+      &quot;posts&quot;: 0,
+      &quot;median_observed_views&quot;: null
+    },
+    &quot;7d_plus&quot;: {
+      &quot;posts&quot;: 24,
+      &quot;median_observed_views&quot;: 69000.0
+    }
+  },
+  &quot;similar_content&quot;: [
+    {
+      &quot;content_id&quot;: &quot;TREND-SIM-000&quot;,
+      &quot;account_id&quot;: &quot;peer-0&quot;,
+      &quot;title&quot;: &quot;视频开场技巧 video opening tips&quot;,
+      &quot;similarity&quot;: 1.0,
+      &quot;published_at&quot;: &quot;2026-10-03T00:00:00+00:00&quot;,
+      &quot;observed_at&quot;: &quot;2026-10-19T00:00:00+00:00&quot;,
+      &quot;observed_views&quot;: 5520.0,
+      &quot;age_hours&quot;: 384.0,
+      &quot;age_band&quot;: &quot;7d_plus&quot;,
+      &quot;recent_velocity&quot;: {
+        &quot;views_per_hour&quot;: 20.0,
+        &quot;view_increment&quot;: 3360.0,
+        &quot;hours&quot;: 168.0,
+        &quot;from&quot;: &quot;2026-10-12T00:00:00+00:00&quot;,
+        &quot;to&quot;: &quot;2026-10-19T00:00:00+00:00&quot;
+      },
+      &quot;previous_velocity&quot;: {
+        &quot;views_per_hour&quot;: 10.0,
+        &quot;view_increment&quot;: 1680.0,
+        &quot;hours&quot;: 168.0,
+        &quot;from&quot;: &quot;2026-10-05T00:00:00+00:00&quot;,
+        &quot;to&quot;: &quot;2026-10-12T00:00:00+00:00&quot;
+      },
+      &quot;features&quot;: {
+        &quot;duration_seconds&quot;: 15.0,
+        &quot;cut_rate&quot;: 0.2,
+        &quot;title_length&quot;: 25,
+        &quot;hashtag_count&quot;: 1
+      }
+    },
+    {
+      &quot;content_id&quot;: &quot;TREND-SIM-001&quot;,
+      &quot;account_id&quot;: &quot;peer-1&quot;,
+      &quot;title&quot;: &quot;视频开场技巧 video opening tips&quot;,
+      &quot;similarity&quot;: 1.0,
+      &quot;published_at&quot;: &quot;2026-10-03T00:00:00+00:00&quot;,
+      &quot;observed_at&quot;: &quot;2026-10-19T00:00:00+00:00&quot;,
+      &quot;observed_views&quot;: 11040.0,
+      &quot;age_hours&quot;: 384.0,
+      &quot;age_band&quot;: &quot;7d_plus&quot;,
+      &quot;recent_velocity&quot;: {
+        &quot;views_per_hour&quot;: 40.0,
+        &quot;view_increment&quot;: 6720.0,
+        &quot;hours&quot;: 168.0,
+        &quot;from&quot;: &quot;2026-10-12T00:00:00+00:00&quot;,
+        &quot;to&quot;: &quot;2026-10-19T00:00:00+00:00&quot;
+      },
+      &quot;previous_velocity&quot;: {
+        &quot;views_per_hour&quot;: 20.0,
+        &quot;view_increment&quot;: 3360.0,
+        &quot;hours&quot;: 168.0,
+        &quot;from&quot;: &quot;2026-10-05T00:00:00+00:00&quot;,
+        &quot;to&quot;: &quot;2026-10-12T00:00:00+00:00&quot;
+      },
+      &quot;features&quot;: {
+        &quot;duration_seconds&quot;: 16.0,
+        &quot;cut_rate&quot;: 0.20500000000000002,
+        &quot;title_length&quot;: 25,
+        &quot;hashtag_count&quot;: 1
+      }
+    },
+    {
+      &quot;content_id&quot;: &quot;TREND-SIM-002&quot;,
+      &quot;account_id&quot;: &quot;peer-2&quot;,
+      &quot;title&quot;: &quot;视频开场技巧 video opening tips&quot;,
+      &quot;similarity&quot;: 1.0,
+      &quot;published_at&quot;: &quot;2026-10-03T00:00:00+00:00&quot;,
+      &quot;observed_at&quot;: &quot;2026-10-19T00:00:00+00:00&quot;,
+      &quot;observed_views&quot;: 16560.0,
+      &quot;age_hours&quot;: 384.0,
+      &quot;age_band&quot;: &quot;7d_plus&quot;,
+      &quot;recent_velocity&quot;: {
+        &quot;views_per_hour&quot;: 60.0,
+        &quot;view_increment&quot;: 10080.0,
+        &quot;hours&quot;: 168.0,
+        &quot;from&quot;: &quot;2026-10-12T00:00:00+00:00&quot;,
+        &quot;to&quot;: &quot;2026-10-19T00:00:00+00:00&quot;
+      },
+      &quot;previous_velocity&quot;: {
+        &quot;views_per_hour&quot;: 30.0,
+        &quot;view_increment&quot;: 5040.0,
+        &quot;hours&quot;: 168.0,
+        &quot;from&quot;: &quot;2026-10-05T00:00:00+00:00&quot;,
+        &quot;to&quot;: &quot;2026-10-12T00:00:00+00:00&quot;
+      },
+      &quot;features&quot;: {
+        &quot;duration_seconds&quot;: 17.0,
+        &quot;cut_rate&quot;: 0.21000000000000002,
+        &quot;title_length&quot;: 25,
+        &quot;hashtag_count&quot;: 1
+      }
+    },
+    {
+      &quot;content_id&quot;: &quot;TREND-SIM-003&quot;,
+      &quot;account_id&quot;: &quot;peer-3&quot;,
+      &quot;title&quot;: &quot;视频开场技巧 video opening tips&quot;,
+      &quot;similarity&quot;: 1.0,
+      &quot;published_at&quot;: &quot;2026-10-03T00:00:00+00:00&quot;,
+      &quot;observed_at&quot;: &quot;2026-10-19T00:00:00+00:00&quot;,
+      &quot;observed_views&quot;: 22080.0,
+      &quot;age_hours&quot;: 384.0,
+      &quot;age_band&quot;: &quot;7d_plus&quot;,
+      &quot;recent_velocity&quot;: {
+        &quot;views_per_hour&quot;: 80.0,
+        &quot;view_increment&quot;: 13440.0,
+        &quot;hours&quot;: 168.0,
+        &quot;from&quot;: &quot;2026-10-12T00:00:00+00:00&quot;,
+        &quot;to&quot;: &quot;2026-10-19T00:00:00+00:00&quot;
+      },
+      &quot;previous_velocity&quot;: {
+        &quot;views_per_hour&quot;: 40.0,
+        &quot;view_increment&quot;: 6720.0,
+        &quot;hours&quot;: 168.0,
+        &quot;from&quot;: &quot;2026-10-05T00:00:00+00:00&quot;,
+        &quot;to&quot;: &quot;2026-10-12T00:00:00+00:00&quot;
+      },
+      &quot;features&quot;: {
+        &quot;duration_seconds&quot;: 18.0,
+        &quot;cut_rate&quot;: 0.21500000000000002,
+        &quot;title_length&quot;: 25,
+        &quot;hashtag_count&quot;: 1
+      }
+    },
+    {
+      &quot;content_id&quot;: &quot;TREND-SIM-004&quot;,
+      &quot;account_id&quot;: &quot;peer-4&quot;,
+      &quot;title&quot;: &quot;视频开场技巧 video opening tips&quot;,
+      &quot;similarity&quot;: 1.0,
+      &quot;published_at&quot;: &quot;2026-10-03T00:00:00+00:00&quot;,
+      &quot;observed_at&quot;: &quot;2026-10-19T00:00:00+00:00&quot;,
+      &quot;observed_views&quot;: 27600.0,
+      &quot;age_hours&quot;: 384.0,
+      &quot;age_band&quot;: &quot;7d_plus&quot;,
+      &quot;recent_velocity&quot;: {
+        &quot;views_per_hour&quot;: 100.0,
+        &quot;view_increment&quot;: 16800.0,
+        &quot;hours&quot;: 168.0,
+        &quot;from&quot;: &quot;2026-10-12T00:00:00+00:00&quot;,
+        &quot;to&quot;: &quot;2026-10-19T00:00:00+00:00&quot;
+      },
+      &quot;previous_velocity&quot;: {
+        &quot;views_per_hour&quot;: 50.0,
+        &quot;view_increment&quot;: 8400.0,
+        &quot;hours&quot;: 168.0,
+        &quot;from&quot;: &quot;2026-10-05T00:00:00+00:00&quot;,
+        &quot;to&quot;: &quot;2026-10-12T00:00:00+00:00&quot;
+      },
+      &quot;features&quot;: {
+        &quot;duration_seconds&quot;: 19.0,
+        &quot;cut_rate&quot;: 0.22,
+        &quot;title_length&quot;: 25,
+        &quot;hashtag_count&quot;: 1
+      }
+    },
+    {
+      &quot;content_id&quot;: &quot;TREND-SIM-005&quot;,
+      &quot;account_id&quot;: &quot;peer-5&quot;,
+      &quot;title&quot;: &quot;视频开场技巧 video opening tips&quot;,
+      &quot;similarity&quot;: 1.0,
+      &quot;published_at&quot;: &quot;2026-10-03T00:00:00+00:00&quot;,
+      &quot;observed_at&quot;: &quot;2026-10-19T00:00:00+00:00&quot;,
+      &quot;observed_views&quot;: 33120.0,
+      &quot;age_hours&quot;: 384.0,
+      &quot;age_band&quot;: &quot;7d_plus&quot;,
+      &quot;recent_velocity&quot;: {
+        &quot;views_per_hour&quot;: 120.0,
+        &quot;view_increment&quot;: 20160.0,
+        &quot;hours&quot;: 168.0,
+        &quot;from&quot;: &quot;2026-10-12T00:00:00+00:00&quot;,
+        &quot;to&quot;: &quot;2026-10-19T00:00:00+00:00&quot;
+      },
+      &quot;previous_velocity&quot;: {
+        &quot;views_per_hour&quot;: 60.0,
+        &quot;view_increment&quot;: 10080.0,
+        &quot;hours&quot;: 168.0,
+        &quot;from&quot;: &quot;2026-10-05T00:00:00+00:00&quot;,
+        &quot;to&quot;: &quot;2026-10-12T00:00:00+00:00&quot;
+      },
+      &quot;features&quot;: {
+        &quot;duration_seconds&quot;: 15.0,
+        &quot;cut_rate&quot;: 0.225,
+        &quot;title_length&quot;: 25,
+        &quot;hashtag_count&quot;: 1
+      }
+    },
+    {
+      &quot;content_id&quot;: &quot;TREND-SIM-006&quot;,
+      &quot;account_id&quot;: &quot;peer-6&quot;,
+      &quot;title&quot;: &quot;视频开场技巧 video opening tips&quot;,
+      &quot;similarity&quot;: 1.0,
+      &quot;published_at&quot;: &quot;2026-10-03T00:00:00+00:00&quot;,
+      &quot;observed_at&quot;: &quot;2026-10-19T00:00:00+00:00&quot;,
+      &quot;observed_views&quot;: 38640.0,
+      &quot;age_hours&quot;: 384.0,
+      &quot;age_band&quot;: &quot;7d_plus&quot;,
+      &quot;recent_velocity&quot;: {
+        &quot;views_per_hour&quot;: 140.0,
+        &quot;view_increment&quot;: 23520.0,
+        &quot;hours&quot;: 168.0,
+        &quot;from&quot;: &quot;2026-10-12T00:00:00+00:00&quot;,
+        &quot;to&quot;: &quot;2026-10-19T00:00:00+00:00&quot;
+      },
+      &quot;previous_velocity&quot;: {
+        &quot;views_per_hour&quot;: 70.0,
+        &quot;view_increment&quot;: 11760.0,
+        &quot;hours&quot;: 168.0,
+        &quot;from&quot;: &quot;2026-10-05T00:00:00+00:00&quot;,
+        &quot;to&quot;: &quot;2026-10-12T00:00:00+00:00&quot;
+      },
+      &quot;features&quot;: {
+        &quot;duration_seconds&quot;: 16.0,
+        &quot;cut_rate&quot;: 0.23,
+        &quot;title_length&quot;: 25,
+        &quot;hashtag_count&quot;: 1
+      }
+    },
+    {
+      &quot;content_id&quot;: &quot;TREND-SIM-007&quot;,
+      &quot;account_id&quot;: &quot;peer-7&quot;,
+      &quot;title&quot;: &quot;视频开场技巧 video opening tips&quot;,
+      &quot;similarity&quot;: 1.0,
+      &quot;published_at&quot;: &quot;2026-10-03T00:00:00+00:00&quot;,
+      &quot;observed_at&quot;: &quot;2026-10-19T00:00:00+00:00&quot;,
+      &quot;observed_views&quot;: 44160.0,
+      &quot;age_hours&quot;: 384.0,
+      &quot;age_band&quot;: &quot;7d_plus&quot;,
+      &quot;recent_velocity&quot;: {
+        &quot;views_per_hour&quot;: 160.0,
+        &quot;view_increment&quot;: 26880.0,
+        &quot;hours&quot;: 168.0,
+        &quot;from&quot;: &quot;2026-10-12T00:00:00+00:00&quot;,
+        &quot;to&quot;: &quot;2026-10-19T00:00:00+00:00&quot;
+      },
+      &quot;previous_velocity&quot;: {
+        &quot;views_per_hour&quot;: 80.0,
+        &quot;view_increment&quot;: 13440.0,
+        &quot;hours&quot;: 168.0,
+        &quot;from&quot;: &quot;2026-10-05T00:00:00+00:00&quot;,
+        &quot;to&quot;: &quot;2026-10-12T00:00:00+00:00&quot;
+      },
+      &quot;features&quot;: {
+        &quot;duration_seconds&quot;: 17.0,
+        &quot;cut_rate&quot;: 0.23500000000000001,
+        &quot;title_length&quot;: 25,
+        &quot;hashtag_count&quot;: 1
+      }
+    },
+    {
+      &quot;content_id&quot;: &quot;TREND-SIM-008&quot;,
+      &quot;account_id&quot;: &quot;peer-0&quot;,
+      &quot;title&quot;: &quot;视频开场技巧 video opening tips&quot;,
+      &quot;similarity&quot;: 1.0,
+      &quot;published_at&quot;: &quot;2026-10-03T00:00:00+00:00&quot;,
+      &quot;observed_at&quot;: &quot;2026-10-19T00:00:00+00:00&quot;,
+      &quot;observed_views&quot;: 49680.0,
+      &quot;age_hours&quot;: 384.0,
+      &quot;age_band&quot;: &quot;7d_plus&quot;,
+      &quot;recent_velocity&quot;: {
+        &quot;views_per_hour&quot;: 180.0,
+        &quot;view_increment&quot;: 30240.0,
+        &quot;hours&quot;: 168.0,
+        &quot;from&quot;: &quot;2026-10-12T00:00:00+00:00&quot;,
+        &quot;to&quot;: &quot;2026-10-19T00:00:00+00:00&quot;
+      },
+      &quot;previous_velocity&quot;: {
+        &quot;views_per_hour&quot;: 90.0,
+        &quot;view_increment&quot;: 15120.0,
+        &quot;hours&quot;: 168.0,
+        &quot;from&quot;: &quot;2026-10-05T00:00:00+00:00&quot;,
+        &quot;to&quot;: &quot;2026-10-12T00:00:00+00:00&quot;
+      },
+      &quot;features&quot;: {
+        &quot;duration_seconds&quot;: 18.0,
+        &quot;cut_rate&quot;: 0.24000000000000002,
+        &quot;title_length&quot;: 25,
+        &quot;hashtag_count&quot;: 1
+      }
+    },
+    {
+      &quot;content_id&quot;: &quot;TREND-SIM-009&quot;,
+      &quot;account_id&quot;: &quot;peer-1&quot;,
+      &quot;title&quot;: &quot;视频开场技巧 video opening tips&quot;,
+      &quot;similarity&quot;: 1.0,
+      &quot;published_at&quot;: &quot;2026-10-03T00:00:00+00:00&quot;,
+      &quot;observed_at&quot;: &quot;2026-10-19T00:00:00+00:00&quot;,
+      &quot;observed_views&quot;: 55200.0,
+      &quot;age_hours&quot;: 384.0,
+      &quot;age_band&quot;: &quot;7d_plus&quot;,
+      &quot;recent_velocity&quot;: {
+        &quot;views_per_hour&quot;: 200.0,
+        &quot;view_increment&quot;: 33600.0,
+        &quot;hours&quot;: 168.0,
+        &quot;from&quot;: &quot;2026-10-12T00:00:00+00:00&quot;,
+        &quot;to&quot;: &quot;2026-10-19T00:00:00+00:00&quot;
+      },
+      &quot;previous_velocity&quot;: {
+        &quot;views_per_hour&quot;: 100.0,
+        &quot;view_increment&quot;: 16800.0,
+        &quot;hours&quot;: 168.0,
+        &quot;from&quot;: &quot;2026-10-05T00:00:00+00:00&quot;,
+        &quot;to&quot;: &quot;2026-10-12T00:00:00+00:00&quot;
+      },
+      &quot;features&quot;: {
+        &quot;duration_seconds&quot;: 19.0,
+        &quot;cut_rate&quot;: 0.245,
+        &quot;title_length&quot;: 25,
+        &quot;hashtag_count&quot;: 1
+      }
+    },
+    {
+      &quot;content_id&quot;: &quot;TREND-SIM-010&quot;,
+      &quot;account_id&quot;: &quot;peer-2&quot;,
+      &quot;title&quot;: &quot;视频开场技巧 video opening tips&quot;,
+      &quot;similarity&quot;: 1.0,
+      &quot;published_at&quot;: &quot;2026-10-03T00:00:00+00:00&quot;,
+      &quot;observed_at&quot;: &quot;2026-10-19T00:00:00+00:00&quot;,
+      &quot;observed_views&quot;: 60720.0,
+      &quot;age_hours&quot;: 384.0,
+      &quot;age_band&quot;: &quot;7d_plus&quot;,
+      &quot;recent_velocity&quot;: {
+        &quot;views_per_hour&quot;: 220.0,
+        &quot;view_increment&quot;: 36960.0,
+        &quot;hours&quot;: 168.0,
+        &quot;from&quot;: &quot;2026-10-12T00:00:00+00:00&quot;,
+        &quot;to&quot;: &quot;2026-10-19T00:00:00+00:00&quot;
+      },
+      &quot;previous_velocity&quot;: {
+        &quot;views_per_hour&quot;: 110.0,
+        &quot;view_increment&quot;: 18480.0,
+        &quot;hours&quot;: 168.0,
+        &quot;from&quot;: &quot;2026-10-05T00:00:00+00:00&quot;,
+        &quot;to&quot;: &quot;2026-10-12T00:00:00+00:00&quot;
+      },
+      &quot;features&quot;: {
+        &quot;duration_seconds&quot;: 15.0,
+        &quot;cut_rate&quot;: 0.25,
+        &quot;title_length&quot;: 25,
+        &quot;hashtag_count&quot;: 1
+      }
+    },
+    {
+      &quot;content_id&quot;: &quot;TREND-SIM-011&quot;,
+      &quot;account_id&quot;: &quot;peer-3&quot;,
+      &quot;title&quot;: &quot;视频开场技巧 video opening tips&quot;,
+      &quot;similarity&quot;: 1.0,
+      &quot;published_at&quot;: &quot;2026-10-03T00:00:00+00:00&quot;,
+      &quot;observed_at&quot;: &quot;2026-10-19T00:00:00+00:00&quot;,
+      &quot;observed_views&quot;: 66240.0,
+      &quot;age_hours&quot;: 384.0,
+      &quot;age_band&quot;: &quot;7d_plus&quot;,
+      &quot;recent_velocity&quot;: {
+        &quot;views_per_hour&quot;: 240.0,
+        &quot;view_increment&quot;: 40320.0,
+        &quot;hours&quot;: 168.0,
+        &quot;from&quot;: &quot;2026-10-12T00:00:00+00:00&quot;,
+        &quot;to&quot;: &quot;2026-10-19T00:00:00+00:00&quot;
+      },
+      &quot;previous_velocity&quot;: {
+        &quot;views_per_hour&quot;: 120.0,
+        &quot;view_increment&quot;: 20160.0,
+        &quot;hours&quot;: 168.0,
+        &quot;from&quot;: &quot;2026-10-05T00:00:00+00:00&quot;,
+        &quot;to&quot;: &quot;2026-10-12T00:00:00+00:00&quot;
+      },
+      &quot;features&quot;: {
+        &quot;duration_seconds&quot;: 16.0,
+        &quot;cut_rate&quot;: 0.255,
+        &quot;title_length&quot;: 25,
+        &quot;hashtag_count&quot;: 1
+      }
+    },
+    {
+      &quot;content_id&quot;: &quot;TREND-SIM-012&quot;,
+      &quot;account_id&quot;: &quot;peer-4&quot;,
+      &quot;title&quot;: &quot;视频开场技巧 video opening tips&quot;,
+      &quot;similarity&quot;: 1.0,
+      &quot;published_at&quot;: &quot;2026-10-03T00:00:00+00:00&quot;,
+      &quot;observed_at&quot;: &quot;2026-10-19T00:00:00+00:00&quot;,
+      &quot;observed_views&quot;: 71760.0,
+      &quot;age_hours&quot;: 384.0,
+      &quot;age_band&quot;: &quot;7d_plus&quot;,
+      &quot;recent_velocity&quot;: {
+        &quot;views_per_hour&quot;: 260.0,
+        &quot;view_increment&quot;: 43680.0,
+        &quot;hours&quot;: 168.0,
+        &quot;from&quot;: &quot;2026-10-12T00:00:00+00:00&quot;,
+        &quot;to&quot;: &quot;2026-10-19T00:00:00+00:00&quot;
+      },
+      &quot;previous_velocity&quot;: {
+        &quot;views_per_hour&quot;: 130.0,
+        &quot;view_increment&quot;: 21840.0,
+        &quot;hours&quot;: 168.0,
+        &quot;from&quot;: &quot;2026-10-05T00:00:00+00:00&quot;,
+        &quot;to&quot;: &quot;2026-10-12T00:00:00+00:00&quot;
+      },
+      &quot;features&quot;: {
+        &quot;duration_seconds&quot;: 17.0,
+        &quot;cut_rate&quot;: 0.26,
+        &quot;title_length&quot;: 25,
+        &quot;hashtag_count&quot;: 1
+      }
+    },
+    {
+      &quot;content_id&quot;: &quot;TREND-SIM-013&quot;,
+      &quot;account_id&quot;: &quot;peer-5&quot;,
+      &quot;title&quot;: &quot;视频开场技巧 video opening tips&quot;,
+      &quot;similarity&quot;: 1.0,
+      &quot;published_at&quot;: &quot;2026-10-03T00:00:00+00:00&quot;,
+      &quot;observed_at&quot;: &quot;2026-10-19T00:00:00+00:00&quot;,
+      &quot;observed_views&quot;: 77280.0,
+      &quot;age_hours&quot;: 384.0,
+      &quot;age_band&quot;: &quot;7d_plus&quot;,
+      &quot;recent_velocity&quot;: {
+        &quot;views_per_hour&quot;: 280.0,
+        &quot;view_increment&quot;: 47040.0,
+        &quot;hours&quot;: 168.0,
+        &quot;from&quot;: &quot;2026-10-12T00:00:00+00:00&quot;,
+        &quot;to&quot;: &quot;2026-10-19T00:00:00+00:00&quot;
+      },
+      &quot;previous_velocity&quot;: {
+        &quot;views_per_hour&quot;: 140.0,
+        &quot;view_increment&quot;: 23520.0,
+        &quot;hours&quot;: 168.0,
+        &quot;from&quot;: &quot;2026-10-05T00:00:00+00:00&quot;,
+        &quot;to&quot;: &quot;2026-10-12T00:00:00+00:00&quot;
+      },
+      &quot;features&quot;: {
+        &quot;duration_seconds&quot;: 18.0,
+        &quot;cut_rate&quot;: 0.265,
+        &quot;title_length&quot;: 25,
+        &quot;hashtag_count&quot;: 1
+      }
+    },
+    {
+      &quot;content_id&quot;: &quot;TREND-SIM-014&quot;,
+      &quot;account_id&quot;: &quot;peer-6&quot;,
+      &quot;title&quot;: &quot;视频开场技巧 video opening tips&quot;,
+      &quot;similarity&quot;: 1.0,
+      &quot;published_at&quot;: &quot;2026-10-03T00:00:00+00:00&quot;,
+      &quot;observed_at&quot;: &quot;2026-10-19T00:00:00+00:00&quot;,
+      &quot;observed_views&quot;: 82800.0,
+      &quot;age_hours&quot;: 384.0,
+      &quot;age_band&quot;: &quot;7d_plus&quot;,
+      &quot;recent_velocity&quot;: {
+        &quot;views_per_hour&quot;: 300.0,
+        &quot;view_increment&quot;: 50400.0,
+        &quot;hours&quot;: 168.0,
+        &quot;from&quot;: &quot;2026-10-12T00:00:00+00:00&quot;,
+        &quot;to&quot;: &quot;2026-10-19T00:00:00+00:00&quot;
+      },
+      &quot;previous_velocity&quot;: {
+        &quot;views_per_hour&quot;: 150.0,
+        &quot;view_increment&quot;: 25200.0,
+        &quot;hours&quot;: 168.0,
+        &quot;from&quot;: &quot;2026-10-05T00:00:00+00:00&quot;,
+        &quot;to&quot;: &quot;2026-10-12T00:00:00+00:00&quot;
+      },
+      &quot;features&quot;: {
+        &quot;duration_seconds&quot;: 19.0,
+        &quot;cut_rate&quot;: 0.27,
+        &quot;title_length&quot;: 25,
+        &quot;hashtag_count&quot;: 1
+      }
+    },
+    {
+      &quot;content_id&quot;: &quot;TREND-SIM-015&quot;,
+      &quot;account_id&quot;: &quot;peer-7&quot;,
+      &quot;title&quot;: &quot;视频开场技巧 video opening tips&quot;,
+      &quot;similarity&quot;: 1.0,
+      &quot;published_at&quot;: &quot;2026-10-03T00:00:00+00:00&quot;,
+      &quot;observed_at&quot;: &quot;2026-10-19T00:00:00+00:00&quot;,
+      &quot;observed_views&quot;: 88320.0,
+      &quot;age_hours&quot;: 384.0,
+      &quot;age_band&quot;: &quot;7d_plus&quot;,
+      &quot;recent_velocity&quot;: {
+        &quot;views_per_hour&quot;: 320.0,
+        &quot;view_increment&quot;: 53760.0,
+        &quot;hours&quot;: 168.0,
+        &quot;from&quot;: &quot;2026-10-12T00:00:00+00:00&quot;,
+        &quot;to&quot;: &quot;2026-10-19T00:00:00+00:00&quot;
+      },
+      &quot;previous_velocity&quot;: {
+        &quot;views_per_hour&quot;: 160.0,
+        &quot;view_increment&quot;: 26880.0,
+        &quot;hours&quot;: 168.0,
+        &quot;from&quot;: &quot;2026-10-05T00:00:00+00:00&quot;,
+        &quot;to&quot;: &quot;2026-10-12T00:00:00+00:00&quot;
+      },
+      &quot;features&quot;: {
+        &quot;duration_seconds&quot;: 15.0,
+        &quot;cut_rate&quot;: 0.275,
+        &quot;title_length&quot;: 25,
+        &quot;hashtag_count&quot;: 1
+      }
+    },
+    {
+      &quot;content_id&quot;: &quot;TREND-SIM-016&quot;,
+      &quot;account_id&quot;: &quot;peer-0&quot;,
+      &quot;title&quot;: &quot;视频开场技巧 video opening tips&quot;,
+      &quot;similarity&quot;: 1.0,
+      &quot;published_at&quot;: &quot;2026-10-03T00:00:00+00:00&quot;,
+      &quot;observed_at&quot;: &quot;2026-10-19T00:00:00+00:00&quot;,
+      &quot;observed_views&quot;: 93840.0,
+      &quot;age_hours&quot;: 384.0,
+      &quot;age_band&quot;: &quot;7d_plus&quot;,
+      &quot;recent_velocity&quot;: {
+        &quot;views_per_hour&quot;: 340.0,
+        &quot;view_increment&quot;: 57120.0,
+        &quot;hours&quot;: 168.0,
+        &quot;from&quot;: &quot;2026-10-12T00:00:00+00:00&quot;,
+        &quot;to&quot;: &quot;2026-10-19T00:00:00+00:00&quot;
+      },
+      &quot;previous_velocity&quot;: {
+        &quot;views_per_hour&quot;: 170.0,
+        &quot;view_increment&quot;: 28560.0,
+        &quot;hours&quot;: 168.0,
+        &quot;from&quot;: &quot;2026-10-05T00:00:00+00:00&quot;,
+        &quot;to&quot;: &quot;2026-10-12T00:00:00+00:00&quot;
+      },
+      &quot;features&quot;: {
+        &quot;duration_seconds&quot;: 16.0,
+        &quot;cut_rate&quot;: 0.28,
+        &quot;title_length&quot;: 25,
+        &quot;hashtag_count&quot;: 1
+      }
+    },
+    {
+      &quot;content_id&quot;: &quot;TREND-SIM-017&quot;,
+      &quot;account_id&quot;: &quot;peer-1&quot;,
+      &quot;title&quot;: &quot;视频开场技巧 video opening tips&quot;,
+      &quot;similarity&quot;: 1.0,
+      &quot;published_at&quot;: &quot;2026-10-03T00:00:00+00:00&quot;,
+      &quot;observed_at&quot;: &quot;2026-10-19T00:00:00+00:00&quot;,
+      &quot;observed_views&quot;: 99360.0,
+      &quot;age_hours&quot;: 384.0,
+      &quot;age_band&quot;: &quot;7d_plus&quot;,
+      &quot;recent_velocity&quot;: {
+        &quot;views_per_hour&quot;: 360.0,
+        &quot;view_increment&quot;: 60480.0,
+        &quot;hours&quot;: 168.0,
+        &quot;from&quot;: &quot;2026-10-12T00:00:00+00:00&quot;,
+        &quot;to&quot;: &quot;2026-10-19T00:00:00+00:00&quot;
+      },
+      &quot;previous_velocity&quot;: {
+        &quot;views_per_hour&quot;: 180.0,
+        &quot;view_increment&quot;: 30240.0,
+        &quot;hours&quot;: 168.0,
+        &quot;from&quot;: &quot;2026-10-05T00:00:00+00:00&quot;,
+        &quot;to&quot;: &quot;2026-10-12T00:00:00+00:00&quot;
+      },
+      &quot;features&quot;: {
+        &quot;duration_seconds&quot;: 17.0,
+        &quot;cut_rate&quot;: 0.28500000000000003,
+        &quot;title_length&quot;: 25,
+        &quot;hashtag_count&quot;: 1
+      }
+    },
+    {
+      &quot;content_id&quot;: &quot;TREND-SIM-018&quot;,
+      &quot;account_id&quot;: &quot;peer-2&quot;,
+      &quot;title&quot;: &quot;视频开场技巧 video opening tips&quot;,
+      &quot;similarity&quot;: 1.0,
+      &quot;published_at&quot;: &quot;2026-10-03T00:00:00+00:00&quot;,
+      &quot;observed_at&quot;: &quot;2026-10-19T00:00:00+00:00&quot;,
+      &quot;observed_views&quot;: 104880.0,
+      &quot;age_hours&quot;: 384.0,
+      &quot;age_band&quot;: &quot;7d_plus&quot;,
+      &quot;recent_velocity&quot;: {
+        &quot;views_per_hour&quot;: 380.0,
+        &quot;view_increment&quot;: 63840.0,
+        &quot;hours&quot;: 168.0,
+        &quot;from&quot;: &quot;2026-10-12T00:00:00+00:00&quot;,
+        &quot;to&quot;: &quot;2026-10-19T00:00:00+00:00&quot;
+      },
+      &quot;previous_velocity&quot;: {
+        &quot;views_per_hour&quot;: 190.0,
+        &quot;view_increment&quot;: 31920.0,
+        &quot;hours&quot;: 168.0,
+        &quot;from&quot;: &quot;2026-10-05T00:00:00+00:00&quot;,
+        &quot;to&quot;: &quot;2026-10-12T00:00:00+00:00&quot;
+      },
+      &quot;features&quot;: {
+        &quot;duration_seconds&quot;: 18.0,
+        &quot;cut_rate&quot;: 0.29000000000000004,
+        &quot;title_length&quot;: 25,
+        &quot;hashtag_count&quot;: 1
+      }
+    },
+    {
+      &quot;content_id&quot;: &quot;TREND-SIM-019&quot;,
+      &quot;account_id&quot;: &quot;peer-3&quot;,
+      &quot;title&quot;: &quot;视频开场技巧 video opening tips&quot;,
+      &quot;similarity&quot;: 1.0,
+      &quot;published_at&quot;: &quot;2026-10-03T00:00:00+00:00&quot;,
+      &quot;observed_at&quot;: &quot;2026-10-19T00:00:00+00:00&quot;,
+      &quot;observed_views&quot;: 110400.0,
+      &quot;age_hours&quot;: 384.0,
+      &quot;age_band&quot;: &quot;7d_plus&quot;,
+      &quot;recent_velocity&quot;: {
+        &quot;views_per_hour&quot;: 400.0,
+        &quot;view_increment&quot;: 67200.0,
+        &quot;hours&quot;: 168.0,
+        &quot;from&quot;: &quot;2026-10-12T00:00:00+00:00&quot;,
+        &quot;to&quot;: &quot;2026-10-19T00:00:00+00:00&quot;
+      },
+      &quot;previous_velocity&quot;: {
+        &quot;views_per_hour&quot;: 200.0,
+        &quot;view_increment&quot;: 33600.0,
+        &quot;hours&quot;: 168.0,
+        &quot;from&quot;: &quot;2026-10-05T00:00:00+00:00&quot;,
+        &quot;to&quot;: &quot;2026-10-12T00:00:00+00:00&quot;
+      },
+      &quot;features&quot;: {
+        &quot;duration_seconds&quot;: 19.0,
+        &quot;cut_rate&quot;: 0.29500000000000004,
+        &quot;title_length&quot;: 25,
+        &quot;hashtag_count&quot;: 1
+      }
+    },
+    {
+      &quot;content_id&quot;: &quot;TREND-SIM-020&quot;,
+      &quot;account_id&quot;: &quot;peer-4&quot;,
+      &quot;title&quot;: &quot;视频开场技巧 video opening tips&quot;,
+      &quot;similarity&quot;: 1.0,
+      &quot;published_at&quot;: &quot;2026-10-03T00:00:00+00:00&quot;,
+      &quot;observed_at&quot;: &quot;2026-10-19T00:00:00+00:00&quot;,
+      &quot;observed_views&quot;: 115920.0,
+      &quot;age_hours&quot;: 384.0,
+      &quot;age_band&quot;: &quot;7d_plus&quot;,
+      &quot;recent_velocity&quot;: {
+        &quot;views_per_hour&quot;: 420.0,
+        &quot;view_increment&quot;: 70560.0,
+        &quot;hours&quot;: 168.0,
+        &quot;from&quot;: &quot;2026-10-12T00:00:00+00:00&quot;,
+        &quot;to&quot;: &quot;2026-10-19T00:00:00+00:00&quot;
+      },
+      &quot;previous_velocity&quot;: {
+        &quot;views_per_hour&quot;: 210.0,
+        &quot;view_increment&quot;: 35280.0,
+        &quot;hours&quot;: 168.0,
+        &quot;from&quot;: &quot;2026-10-05T00:00:00+00:00&quot;,
+        &quot;to&quot;: &quot;2026-10-12T00:00:00+00:00&quot;
+      },
+      &quot;features&quot;: {
+        &quot;duration_seconds&quot;: 15.0,
+        &quot;cut_rate&quot;: 0.30000000000000004,
+        &quot;title_length&quot;: 25,
+        &quot;hashtag_count&quot;: 1
+      }
+    },
+    {
+      &quot;content_id&quot;: &quot;TREND-SIM-021&quot;,
+      &quot;account_id&quot;: &quot;peer-5&quot;,
+      &quot;title&quot;: &quot;视频开场技巧 video opening tips&quot;,
+      &quot;similarity&quot;: 1.0,
+      &quot;published_at&quot;: &quot;2026-10-03T00:00:00+00:00&quot;,
+      &quot;observed_at&quot;: &quot;2026-10-19T00:00:00+00:00&quot;,
+      &quot;observed_views&quot;: 121440.0,
+      &quot;age_hours&quot;: 384.0,
+      &quot;age_band&quot;: &quot;7d_plus&quot;,
+      &quot;recent_velocity&quot;: {
+        &quot;views_per_hour&quot;: 440.0,
+        &quot;view_increment&quot;: 73920.0,
+        &quot;hours&quot;: 168.0,
+        &quot;from&quot;: &quot;2026-10-12T00:00:00+00:00&quot;,
+        &quot;to&quot;: &quot;2026-10-19T00:00:00+00:00&quot;
+      },
+      &quot;previous_velocity&quot;: {
+        &quot;views_per_hour&quot;: 220.0,
+        &quot;view_increment&quot;: 36960.0,
+        &quot;hours&quot;: 168.0,
+        &quot;from&quot;: &quot;2026-10-05T00:00:00+00:00&quot;,
+        &quot;to&quot;: &quot;2026-10-12T00:00:00+00:00&quot;
+      },
+      &quot;features&quot;: {
+        &quot;duration_seconds&quot;: 16.0,
+        &quot;cut_rate&quot;: 0.305,
+        &quot;title_length&quot;: 25,
+        &quot;hashtag_count&quot;: 1
+      }
+    },
+    {
+      &quot;content_id&quot;: &quot;TREND-SIM-022&quot;,
+      &quot;account_id&quot;: &quot;peer-6&quot;,
+      &quot;title&quot;: &quot;视频开场技巧 video opening tips&quot;,
+      &quot;similarity&quot;: 1.0,
+      &quot;published_at&quot;: &quot;2026-10-03T00:00:00+00:00&quot;,
+      &quot;observed_at&quot;: &quot;2026-10-19T00:00:00+00:00&quot;,
+      &quot;observed_views&quot;: 126960.0,
+      &quot;age_hours&quot;: 384.0,
+      &quot;age_band&quot;: &quot;7d_plus&quot;,
+      &quot;recent_velocity&quot;: {
+        &quot;views_per_hour&quot;: 460.0,
+        &quot;view_increment&quot;: 77280.0,
+        &quot;hours&quot;: 168.0,
+        &quot;from&quot;: &quot;2026-10-12T00:00:00+00:00&quot;,
+        &quot;to&quot;: &quot;2026-10-19T00:00:00+00:00&quot;
+      },
+      &quot;previous_velocity&quot;: {
+        &quot;views_per_hour&quot;: 230.0,
+        &quot;view_increment&quot;: 38640.0,
+        &quot;hours&quot;: 168.0,
+        &quot;from&quot;: &quot;2026-10-05T00:00:00+00:00&quot;,
+        &quot;to&quot;: &quot;2026-10-12T00:00:00+00:00&quot;
+      },
+      &quot;features&quot;: {
+        &quot;duration_seconds&quot;: 17.0,
+        &quot;cut_rate&quot;: 0.31,
+        &quot;title_length&quot;: 25,
+        &quot;hashtag_count&quot;: 1
+      }
+    },
+    {
+      &quot;content_id&quot;: &quot;TREND-SIM-023&quot;,
+      &quot;account_id&quot;: &quot;peer-7&quot;,
+      &quot;title&quot;: &quot;视频开场技巧 video opening tips&quot;,
+      &quot;similarity&quot;: 1.0,
+      &quot;published_at&quot;: &quot;2026-10-03T00:00:00+00:00&quot;,
+      &quot;observed_at&quot;: &quot;2026-10-19T00:00:00+00:00&quot;,
+      &quot;observed_views&quot;: 132480.0,
+      &quot;age_hours&quot;: 384.0,
+      &quot;age_band&quot;: &quot;7d_plus&quot;,
+      &quot;recent_velocity&quot;: {
+        &quot;views_per_hour&quot;: 480.0,
+        &quot;view_increment&quot;: 80640.0,
+        &quot;hours&quot;: 168.0,
+        &quot;from&quot;: &quot;2026-10-12T00:00:00+00:00&quot;,
+        &quot;to&quot;: &quot;2026-10-19T00:00:00+00:00&quot;
+      },
+      &quot;previous_velocity&quot;: {
+        &quot;views_per_hour&quot;: 240.0,
+        &quot;view_increment&quot;: 40320.0,
+        &quot;hours&quot;: 168.0,
+        &quot;from&quot;: &quot;2026-10-05T00:00:00+00:00&quot;,
+        &quot;to&quot;: &quot;2026-10-12T00:00:00+00:00&quot;
+      },
+      &quot;features&quot;: {
+        &quot;duration_seconds&quot;: 18.0,
+        &quot;cut_rate&quot;: 0.315,
+        &quot;title_length&quot;: 25,
+        &quot;hashtag_count&quot;: 1
+      }
+    }
+  ],
+  &quot;improvements&quot;: [
+    {
+      &quot;priority&quot;: &quot;test&quot;,
+      &quot;feature&quot;: &quot;duration_seconds&quot;,
+      &quot;current&quot;: 6.0,
+      &quot;peer_top_quartile_median&quot;: 17.5,
+      &quot;peer_interquartile_range&quot;: [
+        16.25,
+        18.0
+      ],
+      &quot;evidence_posts&quot;: 6,
+      &quot;evidence_ids&quot;: [
+        &quot;TREND-SIM-023&quot;,
+        &quot;TREND-SIM-022&quot;,
+        &quot;TREND-SIM-021&quot;,
+        &quot;TREND-SIM-020&quot;,
+        &quot;TREND-SIM-019&quot;,
+        &quot;TREND-SIM-018&quot;
+      ],
+      &quot;suggestion&quot;: &quot;同类高增速样本的视频时长中位数约为 17.50秒。可制作一个接近该范围的版本，与当前版本做单变量对照。&quot;,
+      &quot;interpretation&quot;: &quot;observational association; not evidence that changing this feature increases views&quot;
+    },
+    {
+      &quot;priority&quot;: &quot;test&quot;,
+      &quot;feature&quot;: &quot;cut_rate&quot;,
+      &quot;current&quot;: 0.16666666666666666,
+      &quot;peer_top_quartile_median&quot;: 0.3025,
+      &quot;peer_interquartile_range&quot;: [
+        0.29625,
+        0.30874999999999997
+      ],
+      &quot;evidence_posts&quot;: 6,
+      &quot;evidence_ids&quot;: [
+        &quot;TREND-SIM-023&quot;,
+        &quot;TREND-SIM-022&quot;,
+        &quot;TREND-SIM-021&quot;,
+        &quot;TREND-SIM-020&quot;,
+        &quot;TREND-SIM-019&quot;,
+        &quot;TREND-SIM-018&quot;
+      ],
+      &quot;suggestion&quot;: &quot;同类高增速样本的镜头变化频率中位数约为 0.30次/秒。可制作一个接近该范围的版本，与当前版本做单变量对照。&quot;,
+      &quot;interpretation&quot;: &quot;observational association; not evidence that changing this feature increases views&quot;
+    },
+    {
+      &quot;priority&quot;: &quot;review&quot;,
+      &quot;feature&quot;: &quot;opening&quot;,
+      &quot;suggestion&quot;: &quot;前 3 秒启发式评分偏低：把核心结果、冲突或收益前置，测试不同开场。&quot;,
+      &quot;interpretation&quot;: &quot;content heuristic, not a measured causal traffic effect&quot;
+    }
+  ],
+  &quot;limitations&quot;: [
+    &quot;This is the imported sample&#x27;s observed attention, not platform-wide recommendation exposure or ranking policy.&quot;,
+    &quot;Lexical TF-IDF similarity uses English words and Chinese character n-grams; it is not visual semantic similarity.&quot;,
+    &quot;At least two snapshots one hour apart inside each window are required for velocity. Single snapshots never imply recent growth.&quot;,
+    &quot;Sample heat is not controlled for creator size, content age, promotion or seasonality. Age-banded cumulative views are descriptive only.&quot;,
+    &quot;Recommendations are observational experiments; no promised traffic uplift or causal inference. Trend context never changes calibrated forecasts automatically.&quot;
+  ]
+}</pre></body></html>

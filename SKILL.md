@@ -15,4 +15,6 @@ With history, select one account/platform, preserve the pre-publication feature 
 
 Run `backtest` for sample-outside-fit errors, interval coverage, Brier score and reliability bins. Synthetic CSVs validate software behavior only. Never claim commercial predictive accuracy from them. `compare` accepts actual outcomes after seven days; `report` renders an existing artifact to JSON, Markdown and escaped HTML.
 
+For recent peer traffic, use `trends --csv snapshots.csv --analysis analysis.json --as-of timestamp`, or attach it with `analyze --trends-csv`. See [docs/QUICKSTART.zh-CN.md](docs/QUICKSTART.zh-CN.md) for the separate snapshot CSV contract. Honor platform, account filters and cutoff; never include future observations. One snapshot cannot establish recent velocity. Report sample counts, missing support and observed attention as a sample-relative proxy, never internal recommendation exposure or platform-wide heat. Improvement suggestions are observational hypotheses for controlled tests, not promises of more views. Do not inject a trend multiplier into statistical forecasts without validation.
+
 All processing is local. Do not upload media or historical account data or publish a repository unless the user authorizes that action. Keep the limitations and synthetic-data labels in delivered reports.

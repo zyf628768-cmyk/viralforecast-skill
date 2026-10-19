@@ -1,0 +1,201 @@
+content_id,account_id,platform,published_at,observed_at,title,caption,views,duration_seconds,cut_rate,likes,comments,shares,saves,data_source
+TREND-SIM-000,peer-0,tiktok,2026-10-03T00:00:00+00:00,2026-10-05T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,480,15,0.2,24,1,4,5,synthetic
+TREND-SIM-000,peer-0,tiktok,2026-10-03T00:00:00+00:00,2026-10-11T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,1920,15,0.2,96,7,19,23,synthetic
+TREND-SIM-000,peer-0,tiktok,2026-10-03T00:00:00+00:00,2026-10-12T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,2160,15,0.2,108,8,21,25,synthetic
+TREND-SIM-000,peer-0,tiktok,2026-10-03T00:00:00+00:00,2026-10-18T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,5040,15,0.2,252,20,50,60,synthetic
+TREND-SIM-000,peer-0,tiktok,2026-10-03T00:00:00+00:00,2026-10-19T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,5520,15,0.2,276,22,55,66,synthetic
+TREND-SIM-001,peer-1,tiktok,2026-10-03T00:00:00+00:00,2026-10-05T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,960,16,0.20500000000000002,48,3,9,11,synthetic
+TREND-SIM-001,peer-1,tiktok,2026-10-03T00:00:00+00:00,2026-10-11T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,3840,16,0.20500000000000002,192,15,38,46,synthetic
+TREND-SIM-001,peer-1,tiktok,2026-10-03T00:00:00+00:00,2026-10-12T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,4320,16,0.20500000000000002,216,17,43,51,synthetic
+TREND-SIM-001,peer-1,tiktok,2026-10-03T00:00:00+00:00,2026-10-18T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,10080,16,0.20500000000000002,504,40,100,120,synthetic
+TREND-SIM-001,peer-1,tiktok,2026-10-03T00:00:00+00:00,2026-10-19T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,11040,16,0.20500000000000002,552,44,110,132,synthetic
+TREND-SIM-002,peer-2,tiktok,2026-10-03T00:00:00+00:00,2026-10-05T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,1440,17,0.21000000000000002,72,5,14,17,synthetic
+TREND-SIM-002,peer-2,tiktok,2026-10-03T00:00:00+00:00,2026-10-11T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,5760,17,0.21000000000000002,288,23,57,69,synthetic
+TREND-SIM-002,peer-2,tiktok,2026-10-03T00:00:00+00:00,2026-10-12T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,6480,17,0.21000000000000002,324,25,64,77,synthetic
+TREND-SIM-002,peer-2,tiktok,2026-10-03T00:00:00+00:00,2026-10-18T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,15120,17,0.21000000000000002,756,60,151,181,synthetic
+TREND-SIM-002,peer-2,tiktok,2026-10-03T00:00:00+00:00,2026-10-19T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,16560,17,0.21000000000000002,828,66,165,198,synthetic
+TREND-SIM-003,peer-3,tiktok,2026-10-03T00:00:00+00:00,2026-10-05T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,1920,18,0.21500000000000002,96,7,19,23,synthetic
+TREND-SIM-003,peer-3,tiktok,2026-10-03T00:00:00+00:00,2026-10-11T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,7680,18,0.21500000000000002,384,30,76,92,synthetic
+TREND-SIM-003,peer-3,tiktok,2026-10-03T00:00:00+00:00,2026-10-12T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,8640,18,0.21500000000000002,432,34,86,103,synthetic
+TREND-SIM-003,peer-3,tiktok,2026-10-03T00:00:00+00:00,2026-10-18T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,20160,18,0.21500000000000002,1008,80,201,241,synthetic
+TREND-SIM-003,peer-3,tiktok,2026-10-03T00:00:00+00:00,2026-10-19T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,22080,18,0.21500000000000002,1104,88,220,264,synthetic
+TREND-SIM-004,peer-4,tiktok,2026-10-03T00:00:00+00:00,2026-10-05T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,2400,19,0.22,120,9,24,28,synthetic
+TREND-SIM-004,peer-4,tiktok,2026-10-03T00:00:00+00:00,2026-10-11T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,9600,19,0.22,480,38,96,115,synthetic
+TREND-SIM-004,peer-4,tiktok,2026-10-03T00:00:00+00:00,2026-10-12T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,10800,19,0.22,540,43,108,129,synthetic
+TREND-SIM-004,peer-4,tiktok,2026-10-03T00:00:00+00:00,2026-10-18T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,25200,19,0.22,1260,100,252,302,synthetic
+TREND-SIM-004,peer-4,tiktok,2026-10-03T00:00:00+00:00,2026-10-19T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,27600,19,0.22,1380,110,276,331,synthetic
+TREND-SIM-005,peer-5,tiktok,2026-10-03T00:00:00+00:00,2026-10-05T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,2880,15,0.225,144,11,28,34,synthetic
+TREND-SIM-005,peer-5,tiktok,2026-10-03T00:00:00+00:00,2026-10-11T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,11520,15,0.225,576,46,115,138,synthetic
+TREND-SIM-005,peer-5,tiktok,2026-10-03T00:00:00+00:00,2026-10-12T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,12960,15,0.225,648,51,129,155,synthetic
+TREND-SIM-005,peer-5,tiktok,2026-10-03T00:00:00+00:00,2026-10-18T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,30240,15,0.225,1512,120,302,362,synthetic
+TREND-SIM-005,peer-5,tiktok,2026-10-03T00:00:00+00:00,2026-10-19T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,33120,15,0.225,1656,132,331,397,synthetic
+TREND-SIM-006,peer-6,tiktok,2026-10-03T00:00:00+00:00,2026-10-05T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,3360,16,0.23,168,13,33,40,synthetic
+TREND-SIM-006,peer-6,tiktok,2026-10-03T00:00:00+00:00,2026-10-11T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,13440,16,0.23,672,53,134,161,synthetic
+TREND-SIM-006,peer-6,tiktok,2026-10-03T00:00:00+00:00,2026-10-12T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,15120,16,0.23,756,60,151,181,synthetic
+TREND-SIM-006,peer-6,tiktok,2026-10-03T00:00:00+00:00,2026-10-18T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,35280,16,0.23,1764,141,352,423,synthetic
+TREND-SIM-006,peer-6,tiktok,2026-10-03T00:00:00+00:00,2026-10-19T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,38640,16,0.23,1932,154,386,463,synthetic
+TREND-SIM-007,peer-7,tiktok,2026-10-03T00:00:00+00:00,2026-10-05T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,3840,17,0.23500000000000001,192,15,38,46,synthetic
+TREND-SIM-007,peer-7,tiktok,2026-10-03T00:00:00+00:00,2026-10-11T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,15360,17,0.23500000000000001,768,61,153,184,synthetic
+TREND-SIM-007,peer-7,tiktok,2026-10-03T00:00:00+00:00,2026-10-12T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,17280,17,0.23500000000000001,864,69,172,207,synthetic
+TREND-SIM-007,peer-7,tiktok,2026-10-03T00:00:00+00:00,2026-10-18T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,40320,17,0.23500000000000001,2016,161,403,483,synthetic
+TREND-SIM-007,peer-7,tiktok,2026-10-03T00:00:00+00:00,2026-10-19T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,44160,17,0.23500000000000001,2208,176,441,529,synthetic
+TREND-SIM-008,peer-0,tiktok,2026-10-03T00:00:00+00:00,2026-10-05T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,4320,18,0.24000000000000002,216,17,43,51,synthetic
+TREND-SIM-008,peer-0,tiktok,2026-10-03T00:00:00+00:00,2026-10-11T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,17280,18,0.24000000000000002,864,69,172,207,synthetic
+TREND-SIM-008,peer-0,tiktok,2026-10-03T00:00:00+00:00,2026-10-12T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,19440,18,0.24000000000000002,972,77,194,233,synthetic
+TREND-SIM-008,peer-0,tiktok,2026-10-03T00:00:00+00:00,2026-10-18T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,45360,18,0.24000000000000002,2268,181,453,544,synthetic
+TREND-SIM-008,peer-0,tiktok,2026-10-03T00:00:00+00:00,2026-10-19T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,49680,18,0.24000000000000002,2484,198,496,596,synthetic
+TREND-SIM-009,peer-1,tiktok,2026-10-03T00:00:00+00:00,2026-10-05T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,4800,19,0.245,240,19,48,57,synthetic
+TREND-SIM-009,peer-1,tiktok,2026-10-03T00:00:00+00:00,2026-10-11T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,19200,19,0.245,960,76,192,230,synthetic
+TREND-SIM-009,peer-1,tiktok,2026-10-03T00:00:00+00:00,2026-10-12T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,21600,19,0.245,1080,86,216,259,synthetic
+TREND-SIM-009,peer-1,tiktok,2026-10-03T00:00:00+00:00,2026-10-18T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,50400,19,0.245,2520,201,504,604,synthetic
+TREND-SIM-009,peer-1,tiktok,2026-10-03T00:00:00+00:00,2026-10-19T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,55200,19,0.245,2760,220,552,662,synthetic
+TREND-SIM-010,peer-2,tiktok,2026-10-03T00:00:00+00:00,2026-10-05T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,5280,15,0.25,264,21,52,63,synthetic
+TREND-SIM-010,peer-2,tiktok,2026-10-03T00:00:00+00:00,2026-10-11T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,21120,15,0.25,1056,84,211,253,synthetic
+TREND-SIM-010,peer-2,tiktok,2026-10-03T00:00:00+00:00,2026-10-12T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,23760,15,0.25,1188,95,237,285,synthetic
+TREND-SIM-010,peer-2,tiktok,2026-10-03T00:00:00+00:00,2026-10-18T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,55440,15,0.25,2772,221,554,665,synthetic
+TREND-SIM-010,peer-2,tiktok,2026-10-03T00:00:00+00:00,2026-10-19T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,60720,15,0.25,3036,242,607,728,synthetic
+TREND-SIM-011,peer-3,tiktok,2026-10-03T00:00:00+00:00,2026-10-05T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,5760,16,0.255,288,23,57,69,synthetic
+TREND-SIM-011,peer-3,tiktok,2026-10-03T00:00:00+00:00,2026-10-11T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,23040,16,0.255,1152,92,230,276,synthetic
+TREND-SIM-011,peer-3,tiktok,2026-10-03T00:00:00+00:00,2026-10-12T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,25920,16,0.255,1296,103,259,311,synthetic
+TREND-SIM-011,peer-3,tiktok,2026-10-03T00:00:00+00:00,2026-10-18T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,60480,16,0.255,3024,241,604,725,synthetic
+TREND-SIM-011,peer-3,tiktok,2026-10-03T00:00:00+00:00,2026-10-19T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,66240,16,0.255,3312,264,662,794,synthetic
+TREND-SIM-012,peer-4,tiktok,2026-10-03T00:00:00+00:00,2026-10-05T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,6240,17,0.26,312,24,62,74,synthetic
+TREND-SIM-012,peer-4,tiktok,2026-10-03T00:00:00+00:00,2026-10-11T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,24960,17,0.26,1248,99,249,299,synthetic
+TREND-SIM-012,peer-4,tiktok,2026-10-03T00:00:00+00:00,2026-10-12T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,28080,17,0.26,1404,112,280,336,synthetic
+TREND-SIM-012,peer-4,tiktok,2026-10-03T00:00:00+00:00,2026-10-18T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,65520,17,0.26,3276,262,655,786,synthetic
+TREND-SIM-012,peer-4,tiktok,2026-10-03T00:00:00+00:00,2026-10-19T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,71760,17,0.26,3588,287,717,861,synthetic
+TREND-SIM-013,peer-5,tiktok,2026-10-03T00:00:00+00:00,2026-10-05T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,6720,18,0.265,336,26,67,80,synthetic
+TREND-SIM-013,peer-5,tiktok,2026-10-03T00:00:00+00:00,2026-10-11T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,26880,18,0.265,1344,107,268,322,synthetic
+TREND-SIM-013,peer-5,tiktok,2026-10-03T00:00:00+00:00,2026-10-12T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,30240,18,0.265,1512,120,302,362,synthetic
+TREND-SIM-013,peer-5,tiktok,2026-10-03T00:00:00+00:00,2026-10-18T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,70560,18,0.265,3528,282,705,846,synthetic
+TREND-SIM-013,peer-5,tiktok,2026-10-03T00:00:00+00:00,2026-10-19T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,77280,18,0.265,3864,309,772,927,synthetic
+TREND-SIM-014,peer-6,tiktok,2026-10-03T00:00:00+00:00,2026-10-05T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,7200,19,0.27,360,28,72,86,synthetic
+TREND-SIM-014,peer-6,tiktok,2026-10-03T00:00:00+00:00,2026-10-11T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,28800,19,0.27,1440,115,288,345,synthetic
+TREND-SIM-014,peer-6,tiktok,2026-10-03T00:00:00+00:00,2026-10-12T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,32400,19,0.27,1620,129,324,388,synthetic
+TREND-SIM-014,peer-6,tiktok,2026-10-03T00:00:00+00:00,2026-10-18T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,75600,19,0.27,3780,302,756,907,synthetic
+TREND-SIM-014,peer-6,tiktok,2026-10-03T00:00:00+00:00,2026-10-19T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,82800,19,0.27,4140,331,828,993,synthetic
+TREND-SIM-015,peer-7,tiktok,2026-10-03T00:00:00+00:00,2026-10-05T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,7680,15,0.275,384,30,76,92,synthetic
+TREND-SIM-015,peer-7,tiktok,2026-10-03T00:00:00+00:00,2026-10-11T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,30720,15,0.275,1536,122,307,368,synthetic
+TREND-SIM-015,peer-7,tiktok,2026-10-03T00:00:00+00:00,2026-10-12T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,34560,15,0.275,1728,138,345,414,synthetic
+TREND-SIM-015,peer-7,tiktok,2026-10-03T00:00:00+00:00,2026-10-18T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,80640,15,0.275,4032,322,806,967,synthetic
+TREND-SIM-015,peer-7,tiktok,2026-10-03T00:00:00+00:00,2026-10-19T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,88320,15,0.275,4416,353,883,1059,synthetic
+TREND-SIM-016,peer-0,tiktok,2026-10-03T00:00:00+00:00,2026-10-05T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,8160,16,0.28,408,32,81,97,synthetic
+TREND-SIM-016,peer-0,tiktok,2026-10-03T00:00:00+00:00,2026-10-11T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,32640,16,0.28,1632,130,326,391,synthetic
+TREND-SIM-016,peer-0,tiktok,2026-10-03T00:00:00+00:00,2026-10-12T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,36720,16,0.28,1836,146,367,440,synthetic
+TREND-SIM-016,peer-0,tiktok,2026-10-03T00:00:00+00:00,2026-10-18T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,85680,16,0.28,4284,342,856,1028,synthetic
+TREND-SIM-016,peer-0,tiktok,2026-10-03T00:00:00+00:00,2026-10-19T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,93840,16,0.28,4692,375,938,1126,synthetic
+TREND-SIM-017,peer-1,tiktok,2026-10-03T00:00:00+00:00,2026-10-05T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,8640,17,0.28500000000000003,432,34,86,103,synthetic
+TREND-SIM-017,peer-1,tiktok,2026-10-03T00:00:00+00:00,2026-10-11T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,34560,17,0.28500000000000003,1728,138,345,414,synthetic
+TREND-SIM-017,peer-1,tiktok,2026-10-03T00:00:00+00:00,2026-10-12T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,38880,17,0.28500000000000003,1944,155,388,466,synthetic
+TREND-SIM-017,peer-1,tiktok,2026-10-03T00:00:00+00:00,2026-10-18T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,90720,17,0.28500000000000003,4536,362,907,1088,synthetic
+TREND-SIM-017,peer-1,tiktok,2026-10-03T00:00:00+00:00,2026-10-19T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,99360,17,0.28500000000000003,4968,397,993,1192,synthetic
+TREND-SIM-018,peer-2,tiktok,2026-10-03T00:00:00+00:00,2026-10-05T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,9120,18,0.29000000000000004,456,36,91,109,synthetic
+TREND-SIM-018,peer-2,tiktok,2026-10-03T00:00:00+00:00,2026-10-11T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,36480,18,0.29000000000000004,1824,145,364,437,synthetic
+TREND-SIM-018,peer-2,tiktok,2026-10-03T00:00:00+00:00,2026-10-12T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,41040,18,0.29000000000000004,2052,164,410,492,synthetic
+TREND-SIM-018,peer-2,tiktok,2026-10-03T00:00:00+00:00,2026-10-18T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,95760,18,0.29000000000000004,4788,383,957,1149,synthetic
+TREND-SIM-018,peer-2,tiktok,2026-10-03T00:00:00+00:00,2026-10-19T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,104880,18,0.29000000000000004,5244,419,1048,1258,synthetic
+TREND-SIM-019,peer-3,tiktok,2026-10-03T00:00:00+00:00,2026-10-05T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,9600,19,0.29500000000000004,480,38,96,115,synthetic
+TREND-SIM-019,peer-3,tiktok,2026-10-03T00:00:00+00:00,2026-10-11T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,38400,19,0.29500000000000004,1920,153,384,460,synthetic
+TREND-SIM-019,peer-3,tiktok,2026-10-03T00:00:00+00:00,2026-10-12T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,43200,19,0.29500000000000004,2160,172,432,518,synthetic
+TREND-SIM-019,peer-3,tiktok,2026-10-03T00:00:00+00:00,2026-10-18T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,100800,19,0.29500000000000004,5040,403,1008,1209,synthetic
+TREND-SIM-019,peer-3,tiktok,2026-10-03T00:00:00+00:00,2026-10-19T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,110400,19,0.29500000000000004,5520,441,1104,1324,synthetic
+TREND-SIM-020,peer-4,tiktok,2026-10-03T00:00:00+00:00,2026-10-05T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,10080,15,0.30000000000000004,504,40,100,120,synthetic
+TREND-SIM-020,peer-4,tiktok,2026-10-03T00:00:00+00:00,2026-10-11T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,40320,15,0.30000000000000004,2016,161,403,483,synthetic
+TREND-SIM-020,peer-4,tiktok,2026-10-03T00:00:00+00:00,2026-10-12T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,45360,15,0.30000000000000004,2268,181,453,544,synthetic
+TREND-SIM-020,peer-4,tiktok,2026-10-03T00:00:00+00:00,2026-10-18T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,105840,15,0.30000000000000004,5292,423,1058,1270,synthetic
+TREND-SIM-020,peer-4,tiktok,2026-10-03T00:00:00+00:00,2026-10-19T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,115920,15,0.30000000000000004,5796,463,1159,1391,synthetic
+TREND-SIM-021,peer-5,tiktok,2026-10-03T00:00:00+00:00,2026-10-05T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,10560,16,0.305,528,42,105,126,synthetic
+TREND-SIM-021,peer-5,tiktok,2026-10-03T00:00:00+00:00,2026-10-11T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,42240,16,0.305,2112,168,422,506,synthetic
+TREND-SIM-021,peer-5,tiktok,2026-10-03T00:00:00+00:00,2026-10-12T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,47520,16,0.305,2376,190,475,570,synthetic
+TREND-SIM-021,peer-5,tiktok,2026-10-03T00:00:00+00:00,2026-10-18T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,110880,16,0.305,5544,443,1108,1330,synthetic
+TREND-SIM-021,peer-5,tiktok,2026-10-03T00:00:00+00:00,2026-10-19T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,121440,16,0.305,6072,485,1214,1457,synthetic
+TREND-SIM-022,peer-6,tiktok,2026-10-03T00:00:00+00:00,2026-10-05T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,11040,17,0.31,552,44,110,132,synthetic
+TREND-SIM-022,peer-6,tiktok,2026-10-03T00:00:00+00:00,2026-10-11T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,44160,17,0.31,2208,176,441,529,synthetic
+TREND-SIM-022,peer-6,tiktok,2026-10-03T00:00:00+00:00,2026-10-12T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,49680,17,0.31,2484,198,496,596,synthetic
+TREND-SIM-022,peer-6,tiktok,2026-10-03T00:00:00+00:00,2026-10-18T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,115920,17,0.31,5796,463,1159,1391,synthetic
+TREND-SIM-022,peer-6,tiktok,2026-10-03T00:00:00+00:00,2026-10-19T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,126960,17,0.31,6348,507,1269,1523,synthetic
+TREND-SIM-023,peer-7,tiktok,2026-10-03T00:00:00+00:00,2026-10-05T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,11520,18,0.315,576,46,115,138,synthetic
+TREND-SIM-023,peer-7,tiktok,2026-10-03T00:00:00+00:00,2026-10-11T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,46080,18,0.315,2304,184,460,552,synthetic
+TREND-SIM-023,peer-7,tiktok,2026-10-03T00:00:00+00:00,2026-10-12T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,51840,18,0.315,2592,207,518,622,synthetic
+TREND-SIM-023,peer-7,tiktok,2026-10-03T00:00:00+00:00,2026-10-18T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,120960,18,0.315,6048,483,1209,1451,synthetic
+TREND-SIM-023,peer-7,tiktok,2026-10-03T00:00:00+00:00,2026-10-19T00:00:00+00:00,视频开场技巧 video opening tips,提升内容吸引力 how to improve an opening #video,132480,18,0.315,6624,529,1324,1589,synthetic
+TREND-SIM-024,peer-0,tiktok,2026-10-03T00:00:00+00:00,2026-10-05T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,1440,19,0.32,72,5,14,17,synthetic
+TREND-SIM-024,peer-0,tiktok,2026-10-03T00:00:00+00:00,2026-10-11T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,5760,19,0.32,288,23,57,69,synthetic
+TREND-SIM-024,peer-0,tiktok,2026-10-03T00:00:00+00:00,2026-10-12T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,6480,19,0.32,324,25,64,77,synthetic
+TREND-SIM-024,peer-0,tiktok,2026-10-03T00:00:00+00:00,2026-10-18T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,10800,19,0.32,540,43,108,129,synthetic
+TREND-SIM-024,peer-0,tiktok,2026-10-03T00:00:00+00:00,2026-10-19T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,11520,19,0.32,576,46,115,138,synthetic
+TREND-SIM-025,peer-1,tiktok,2026-10-03T00:00:00+00:00,2026-10-05T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,1440,15,0.325,72,5,14,17,synthetic
+TREND-SIM-025,peer-1,tiktok,2026-10-03T00:00:00+00:00,2026-10-11T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,5760,15,0.325,288,23,57,69,synthetic
+TREND-SIM-025,peer-1,tiktok,2026-10-03T00:00:00+00:00,2026-10-12T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,6480,15,0.325,324,25,64,77,synthetic
+TREND-SIM-025,peer-1,tiktok,2026-10-03T00:00:00+00:00,2026-10-18T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,10800,15,0.325,540,43,108,129,synthetic
+TREND-SIM-025,peer-1,tiktok,2026-10-03T00:00:00+00:00,2026-10-19T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,11520,15,0.325,576,46,115,138,synthetic
+TREND-SIM-026,peer-2,tiktok,2026-10-03T00:00:00+00:00,2026-10-05T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,1440,16,0.33,72,5,14,17,synthetic
+TREND-SIM-026,peer-2,tiktok,2026-10-03T00:00:00+00:00,2026-10-11T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,5760,16,0.33,288,23,57,69,synthetic
+TREND-SIM-026,peer-2,tiktok,2026-10-03T00:00:00+00:00,2026-10-12T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,6480,16,0.33,324,25,64,77,synthetic
+TREND-SIM-026,peer-2,tiktok,2026-10-03T00:00:00+00:00,2026-10-18T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,10800,16,0.33,540,43,108,129,synthetic
+TREND-SIM-026,peer-2,tiktok,2026-10-03T00:00:00+00:00,2026-10-19T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,11520,16,0.33,576,46,115,138,synthetic
+TREND-SIM-027,peer-3,tiktok,2026-10-03T00:00:00+00:00,2026-10-05T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,1440,17,0.335,72,5,14,17,synthetic
+TREND-SIM-027,peer-3,tiktok,2026-10-03T00:00:00+00:00,2026-10-11T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,5760,17,0.335,288,23,57,69,synthetic
+TREND-SIM-027,peer-3,tiktok,2026-10-03T00:00:00+00:00,2026-10-12T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,6480,17,0.335,324,25,64,77,synthetic
+TREND-SIM-027,peer-3,tiktok,2026-10-03T00:00:00+00:00,2026-10-18T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,10800,17,0.335,540,43,108,129,synthetic
+TREND-SIM-027,peer-3,tiktok,2026-10-03T00:00:00+00:00,2026-10-19T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,11520,17,0.335,576,46,115,138,synthetic
+TREND-SIM-028,peer-4,tiktok,2026-10-03T00:00:00+00:00,2026-10-05T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,1440,18,0.34,72,5,14,17,synthetic
+TREND-SIM-028,peer-4,tiktok,2026-10-03T00:00:00+00:00,2026-10-11T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,5760,18,0.34,288,23,57,69,synthetic
+TREND-SIM-028,peer-4,tiktok,2026-10-03T00:00:00+00:00,2026-10-12T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,6480,18,0.34,324,25,64,77,synthetic
+TREND-SIM-028,peer-4,tiktok,2026-10-03T00:00:00+00:00,2026-10-18T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,10800,18,0.34,540,43,108,129,synthetic
+TREND-SIM-028,peer-4,tiktok,2026-10-03T00:00:00+00:00,2026-10-19T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,11520,18,0.34,576,46,115,138,synthetic
+TREND-SIM-029,peer-5,tiktok,2026-10-03T00:00:00+00:00,2026-10-05T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,1440,19,0.345,72,5,14,17,synthetic
+TREND-SIM-029,peer-5,tiktok,2026-10-03T00:00:00+00:00,2026-10-11T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,5760,19,0.345,288,23,57,69,synthetic
+TREND-SIM-029,peer-5,tiktok,2026-10-03T00:00:00+00:00,2026-10-12T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,6480,19,0.345,324,25,64,77,synthetic
+TREND-SIM-029,peer-5,tiktok,2026-10-03T00:00:00+00:00,2026-10-18T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,10800,19,0.345,540,43,108,129,synthetic
+TREND-SIM-029,peer-5,tiktok,2026-10-03T00:00:00+00:00,2026-10-19T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,11520,19,0.345,576,46,115,138,synthetic
+TREND-SIM-030,peer-6,tiktok,2026-10-03T00:00:00+00:00,2026-10-05T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,1440,15,0.35,72,5,14,17,synthetic
+TREND-SIM-030,peer-6,tiktok,2026-10-03T00:00:00+00:00,2026-10-11T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,5760,15,0.35,288,23,57,69,synthetic
+TREND-SIM-030,peer-6,tiktok,2026-10-03T00:00:00+00:00,2026-10-12T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,6480,15,0.35,324,25,64,77,synthetic
+TREND-SIM-030,peer-6,tiktok,2026-10-03T00:00:00+00:00,2026-10-18T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,10800,15,0.35,540,43,108,129,synthetic
+TREND-SIM-030,peer-6,tiktok,2026-10-03T00:00:00+00:00,2026-10-19T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,11520,15,0.35,576,46,115,138,synthetic
+TREND-SIM-031,peer-7,tiktok,2026-10-03T00:00:00+00:00,2026-10-05T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,1440,16,0.355,72,5,14,17,synthetic
+TREND-SIM-031,peer-7,tiktok,2026-10-03T00:00:00+00:00,2026-10-11T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,5760,16,0.355,288,23,57,69,synthetic
+TREND-SIM-031,peer-7,tiktok,2026-10-03T00:00:00+00:00,2026-10-12T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,6480,16,0.355,324,25,64,77,synthetic
+TREND-SIM-031,peer-7,tiktok,2026-10-03T00:00:00+00:00,2026-10-18T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,10800,16,0.355,540,43,108,129,synthetic
+TREND-SIM-031,peer-7,tiktok,2026-10-03T00:00:00+00:00,2026-10-19T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,11520,16,0.355,576,46,115,138,synthetic
+TREND-SIM-032,peer-0,tiktok,2026-10-03T00:00:00+00:00,2026-10-05T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,1440,17,0.36,72,5,14,17,synthetic
+TREND-SIM-032,peer-0,tiktok,2026-10-03T00:00:00+00:00,2026-10-11T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,5760,17,0.36,288,23,57,69,synthetic
+TREND-SIM-032,peer-0,tiktok,2026-10-03T00:00:00+00:00,2026-10-12T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,6480,17,0.36,324,25,64,77,synthetic
+TREND-SIM-032,peer-0,tiktok,2026-10-03T00:00:00+00:00,2026-10-18T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,10800,17,0.36,540,43,108,129,synthetic
+TREND-SIM-032,peer-0,tiktok,2026-10-03T00:00:00+00:00,2026-10-19T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,11520,17,0.36,576,46,115,138,synthetic
+TREND-SIM-033,peer-1,tiktok,2026-10-03T00:00:00+00:00,2026-10-05T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,1440,18,0.365,72,5,14,17,synthetic
+TREND-SIM-033,peer-1,tiktok,2026-10-03T00:00:00+00:00,2026-10-11T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,5760,18,0.365,288,23,57,69,synthetic
+TREND-SIM-033,peer-1,tiktok,2026-10-03T00:00:00+00:00,2026-10-12T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,6480,18,0.365,324,25,64,77,synthetic
+TREND-SIM-033,peer-1,tiktok,2026-10-03T00:00:00+00:00,2026-10-18T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,10800,18,0.365,540,43,108,129,synthetic
+TREND-SIM-033,peer-1,tiktok,2026-10-03T00:00:00+00:00,2026-10-19T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,11520,18,0.365,576,46,115,138,synthetic
+TREND-SIM-034,peer-2,tiktok,2026-10-03T00:00:00+00:00,2026-10-05T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,1440,19,0.37,72,5,14,17,synthetic
+TREND-SIM-034,peer-2,tiktok,2026-10-03T00:00:00+00:00,2026-10-11T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,5760,19,0.37,288,23,57,69,synthetic
+TREND-SIM-034,peer-2,tiktok,2026-10-03T00:00:00+00:00,2026-10-12T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,6480,19,0.37,324,25,64,77,synthetic
+TREND-SIM-034,peer-2,tiktok,2026-10-03T00:00:00+00:00,2026-10-18T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,10800,19,0.37,540,43,108,129,synthetic
+TREND-SIM-034,peer-2,tiktok,2026-10-03T00:00:00+00:00,2026-10-19T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,11520,19,0.37,576,46,115,138,synthetic
+TREND-SIM-035,peer-3,tiktok,2026-10-03T00:00:00+00:00,2026-10-05T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,1440,15,0.375,72,5,14,17,synthetic
+TREND-SIM-035,peer-3,tiktok,2026-10-03T00:00:00+00:00,2026-10-11T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,5760,15,0.375,288,23,57,69,synthetic
+TREND-SIM-035,peer-3,tiktok,2026-10-03T00:00:00+00:00,2026-10-12T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,6480,15,0.375,324,25,64,77,synthetic
+TREND-SIM-035,peer-3,tiktok,2026-10-03T00:00:00+00:00,2026-10-18T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,10800,15,0.375,540,43,108,129,synthetic
+TREND-SIM-035,peer-3,tiktok,2026-10-03T00:00:00+00:00,2026-10-19T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,11520,15,0.375,576,46,115,138,synthetic
+TREND-SIM-036,peer-4,tiktok,2026-10-03T00:00:00+00:00,2026-10-05T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,1440,16,0.38,72,5,14,17,synthetic
+TREND-SIM-036,peer-4,tiktok,2026-10-03T00:00:00+00:00,2026-10-11T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,5760,16,0.38,288,23,57,69,synthetic
+TREND-SIM-036,peer-4,tiktok,2026-10-03T00:00:00+00:00,2026-10-12T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,6480,16,0.38,324,25,64,77,synthetic
+TREND-SIM-036,peer-4,tiktok,2026-10-03T00:00:00+00:00,2026-10-18T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,10800,16,0.38,540,43,108,129,synthetic
+TREND-SIM-036,peer-4,tiktok,2026-10-03T00:00:00+00:00,2026-10-19T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,11520,16,0.38,576,46,115,138,synthetic
+TREND-SIM-037,peer-5,tiktok,2026-10-03T00:00:00+00:00,2026-10-05T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,1440,17,0.385,72,5,14,17,synthetic
+TREND-SIM-037,peer-5,tiktok,2026-10-03T00:00:00+00:00,2026-10-11T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,5760,17,0.385,288,23,57,69,synthetic
+TREND-SIM-037,peer-5,tiktok,2026-10-03T00:00:00+00:00,2026-10-12T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,6480,17,0.385,324,25,64,77,synthetic
+TREND-SIM-037,peer-5,tiktok,2026-10-03T00:00:00+00:00,2026-10-18T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,10800,17,0.385,540,43,108,129,synthetic
+TREND-SIM-037,peer-5,tiktok,2026-10-03T00:00:00+00:00,2026-10-19T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,11520,17,0.385,576,46,115,138,synthetic
+TREND-SIM-038,peer-6,tiktok,2026-10-03T00:00:00+00:00,2026-10-05T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,1440,18,0.39,72,5,14,17,synthetic
+TREND-SIM-038,peer-6,tiktok,2026-10-03T00:00:00+00:00,2026-10-11T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,5760,18,0.39,288,23,57,69,synthetic
+TREND-SIM-038,peer-6,tiktok,2026-10-03T00:00:00+00:00,2026-10-12T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,6480,18,0.39,324,25,64,77,synthetic
+TREND-SIM-038,peer-6,tiktok,2026-10-03T00:00:00+00:00,2026-10-18T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,10800,18,0.39,540,43,108,129,synthetic
+TREND-SIM-038,peer-6,tiktok,2026-10-03T00:00:00+00:00,2026-10-19T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,11520,18,0.39,576,46,115,138,synthetic
+TREND-SIM-039,peer-7,tiktok,2026-10-03T00:00:00+00:00,2026-10-05T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,1440,19,0.395,72,5,14,17,synthetic
+TREND-SIM-039,peer-7,tiktok,2026-10-03T00:00:00+00:00,2026-10-11T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,5760,19,0.395,288,23,57,69,synthetic
+TREND-SIM-039,peer-7,tiktok,2026-10-03T00:00:00+00:00,2026-10-12T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,6480,19,0.395,324,25,64,77,synthetic
+TREND-SIM-039,peer-7,tiktok,2026-10-03T00:00:00+00:00,2026-10-18T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,10800,19,0.395,540,43,108,129,synthetic
+TREND-SIM-039,peer-7,tiktok,2026-10-03T00:00:00+00:00,2026-10-19T00:00:00+00:00,宠物日常 cute pet diary,A quiet animal afternoon #pet,11520,19,0.395,576,46,115,138,synthetic

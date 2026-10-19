@@ -2,6 +2,9 @@
 
 ## 0.2.0 — 2026-10-19
 
+- Platform-export CSV snapshots for similar-content traffic, recent velocity, paired-window momentum and supported improvement experiments.
+- Public-source ZIP, SHA256 and standalone Chinese quickstart attached through a test-gated GitHub Release workflow.
+
 - Rewritten Chinese introduction and simplified homepage wording.
 - Optional local object detection, temporal action recognition, CLIP scene/copy semantics and face-expression cues.
 - Built-in CPU multilingual Whisper ASR, explicit model downloads, pinned snapshots and integrity checks.

@@ -1,7 +1,3 @@
-# Validation records
+# Validation
 
-The local source suite passed 42 tests; the extracted release suite passed 42 tests. See docs/TEST_REPORT.md for actual results and commands, and GitHub Actions for independently executed CI.
-
-Raw local logs, JUnit XML and environment records are intentionally excluded from this public repository because they contain machine-specific paths and metadata. Full local records remain in the user's delivered source archive. Generate your own records with `python -m pytest -q --junitxml=validation/pytest.xml` and the scripts documented in README.md.
-
-Synthetic data validates software behavior only; it does not establish real-account prediction accuracy.
+Latest local release preparation: 58 passed / 1 large-model skip in the lightweight suite; 59 passed with real local model weights enabled. See docs/TRENDS_TEST_REPORT.md and docs/UNDERSTANDING_TEST_REPORT.md. Public CI executes the lightweight suite across Windows/Ubuntu and Python 3.10/3.12. Raw private local logs are excluded. GitHub workflow test artifacts provide independently executed JUnit records.

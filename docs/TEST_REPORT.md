@@ -53,4 +53,3 @@ Probability Brier/ECE/reliability and baseline comparisons are stored in the bac
 Only the local Windows/Python 3.12 environment was actually executed. GitHub Actions is configured for Windows/Ubuntu × Python 3.10/3.12 but has not run remotely. macOS, other interpreters, large videos, GPU inference, real ASR adapters, real account forecasting and production workloads were not tested. The local stub adapter test verifies the interface, not speech-recognition quality. There is no built-in visual semantic model, OCR, hosted UI or paid API dependency.
 
 External FFmpeg/FFprobe are not bundled in source releases and must be installed/discovered as documented. The source archive and SHA256 are generated in local `dist/` and copied to `outputs/` for delivery. No GitHub publication or user-data upload occurred.
-

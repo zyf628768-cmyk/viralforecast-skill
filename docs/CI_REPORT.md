@@ -18,4 +18,3 @@ The corrected [CI run](https://github.com/zyf628768-cmyk/viralforecast-skill/act
 JUnit artifacts are attached to the run. These are software compatibility/integration tests with simulated data; no real-account or commercial accuracy claim is established.
 
 Raw local machine logs and paths were excluded from the public source snapshot. Full original local records remain in the user's local delivery ZIP. `docs/TEST_REPORT.md` is the historical local validation report; this document records the later remote execution and supersedes its earlier statement that GitHub CI had not yet run.
-

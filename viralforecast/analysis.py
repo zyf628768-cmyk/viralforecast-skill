@@ -33,7 +33,10 @@ def text_features(title, caption, segments):
 
 def analyze(video, title="", caption="", platform="tiktok", output="media", config=None,
             transcript_path=None, adapter=None, cover=None, understand=False, asr=False,
-            models_dir="models", language=None, semantic_labels=None):
+            models_dir="models", language=None, semantic_labels=None, trends_csv=None, as_of=None,
+            trend_days=7, min_similarity=.15, exclude_account=None):
+    if trends_csv and not as_of:
+        raise ForecastError("Trend context requires --as-of to define the observation cutoff")
     if asr and (transcript_path or adapter):
         raise ForecastError("Choose built-in ASR, transcript import or local adapter, not multiple sources")
     r = rules(platform, config)
@@ -70,8 +73,12 @@ def analyze(video, title="", caption="", platform="tiktok", output="media", conf
         tips.append("Review slow sections; scene change counts do not measure storytelling quality.")
     if not m["transcript"]["segments"]:
         tips.append("Supply timestamped transcript JSON or a trusted local transcription adapter for lexical joint features.")
-    return envelope("analysis", mode="A", assessment_type="heuristic_not_statistically_calibrated",
+    result = envelope("analysis", mode="A", assessment_type="heuristic_not_statistically_calibrated",
                     platform=platform, title=title, caption=caption, features=f, media=m, scores=scores,
                     rules=r, risks=risks, suggestions=tips,
                     limitations=["Scores are hand-written proxies, not audience retention estimates or success probabilities.",
                                  "Text/transcript overlap is lexical; optional visual copy alignment is separately reported in media.understanding."])
+    if trends_csv:
+        from .trends import trends
+        result["trend_context"] = trends(trends_csv, result, as_of, trend_days, min_similarity, exclude_account)
+    return result

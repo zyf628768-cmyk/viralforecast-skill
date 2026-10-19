@@ -1,5 +1,7 @@
 # Data contract / 数据约定
 
+Recent peer traffic uses a **separate snapshot CSV**: `content_id,account_id,platform,published_at,observed_at,title,caption,views`, with optional duration/cut-rate/interaction fields and provenance. It permits multiple observations per content ID. See [QUICKSTART.zh-CN.md](QUICKSTART.zh-CN.md) for exact use and minimum support. The historical forecasting contract below is unchanged; lifetime snapshot views must not be substituted for its fixed-window targets.
+
 CSV is UTF-8 (BOM accepted), comma-delimited, with one row per published post. Required columns:
 
 | Column | Definition |
