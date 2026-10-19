@@ -1,0 +1,5 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object", "required": ["account_id", "platform", "published_at", "observed_at", "views_24h", "views_7d"],
+  "properties": {"account_id": {"type": "string", "minLength": 1}, "platform": {"type": "string"}, "published_at": {"type": "string", "format": "date-time"}, "observed_at": {"type": "string", "format": "date-time"}, "views_24h": {"type": "number", "minimum": 0}, "views_7d": {"type": "number", "minimum": 0}}
+}

@@ -1,0 +1,6 @@
+{
+  "ideal_duration": 20,
+  "max_duration": 300,
+  "ideal_title_length": 50,
+  "cut_target": 0.2
+}

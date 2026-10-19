@@ -1,0 +1,9 @@
+{
+  "tiktok": {"ideal_duration": 30, "max_duration": 600, "ideal_title_length": 60, "cut_target": 0.25},
+  "youtube-shorts": {"ideal_duration": 40, "max_duration": 180, "ideal_title_length": 60, "cut_target": 0.20},
+  "instagram-reels": {"ideal_duration": 30, "max_duration": 180, "ideal_title_length": 80, "cut_target": 0.25},
+  "douyin": {"ideal_duration": 25, "max_duration": 600, "ideal_title_length": 40, "cut_target": 0.30},
+  "kuaishou": {"ideal_duration": 35, "max_duration": 600, "ideal_title_length": 40, "cut_target": 0.20},
+  "xiaohongshu": {"ideal_duration": 45, "max_duration": 900, "ideal_title_length": 30, "cut_target": 0.15},
+  "bilibili": {"ideal_duration": 120, "max_duration": 3600, "ideal_title_length": 60, "cut_target": 0.10}
+}

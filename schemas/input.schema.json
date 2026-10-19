@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/viralforecast/input.schema.json",
+  "title": "ViralForecast analysis request (CLI flags map to these fields)",
+  "type": "object",
+  "required": ["video", "platform"],
+  "additionalProperties": false,
+  "properties": {
+    "video": {"type": "string", "minLength": 1},
+    "title": {"type": "string"},
+    "caption": {"type": "string"},
+    "platform": {"enum": ["tiktok", "youtube-shorts", "instagram-reels", "douyin", "kuaishou", "xiaohongshu", "bilibili"]},
+    "cover": {"type": "string"},
+    "transcript": {"type": "string"},
+    "rules": {"type": "string"},
+    "transcriber": {"type": "string", "pattern": "^[A-Za-z_][A-Za-z0-9_.]*:[A-Za-z_][A-Za-z0-9_]*$"}
+  }
+}

@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "viralforecast-skill"
+version = "0.1.0"
+description = "Local pre-publication content heuristics and account-level temporal forecasting"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+dependencies = ["numpy>=1.24,<3", "Pillow>=10,<14"]
+
+[project.optional-dependencies]
+test = ["pytest>=8,<10", "jsonschema>=4.20,<5"]
+media = ["imageio-ffmpeg>=0.5,<0.7"]
+
+[project.scripts]
+viralforecast = "viralforecast.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["viralforecast*"]
+
+[tool.setuptools.package-data]
+viralforecast = ["platforms.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

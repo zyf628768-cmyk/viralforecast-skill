@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ViralForecast result envelope",
+  "type": "object",
+  "required": ["schema_version", "kind", "limitations"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "kind": {"enum": ["analysis", "prediction", "backtest", "comparison"]},
+    "mode": {"enum": ["A", "B"]},
+    "limitations": {"type": "array", "items": {"type": "string"}},
+    "features": {"$ref": "#/$defs/features"},
+    "forecasts": {"type": ["object", "null"]}
+  },
+  "allOf": [
+    {"if": {"properties": {"kind": {"const": "analysis"}}},
+     "then": {"required": ["mode", "assessment_type", "features", "scores", "media", "platform"],
+       "properties": {"mode": {"const": "A"}, "assessment_type": {"const": "heuristic_not_statistically_calibrated"},
+         "scores": {"type": "object", "required": ["relative_potential", "first_3_seconds", "completion_potential", "interaction_potential", "pacing"], "additionalProperties": {"type": "number", "minimum": 0, "maximum": 100}},
+         "media": {"type": "object", "required": ["duration_seconds", "visual_semantics", "keyframes"], "properties": {"visual_semantics": {"const": "not_implemented"}}}},
+       "not": {"required": ["forecasts"]}}},
+    {"if": {"properties": {"kind": {"const": "prediction"}}},
+     "then": {"required": ["mode", "status", "as_of", "account_id", "eligible_rows", "data_source", "forecasts"],
+       "allOf": [
+         {"if": {"properties": {"mode": {"const": "A"}}}, "then": {"properties": {"forecasts": {"type": "null"}}}},
+         {"if": {"properties": {"mode": {"const": "B"}}}, "then": {"required": ["audit", "rates"], "properties": {"forecasts": {"type": "object", "required": ["views_24h", "views_7d"], "properties": {"views_24h": {"$ref": "#/$defs/forecast"}, "views_7d": {"$ref": "#/$defs/forecast"}}}}}}
+       ]}},
+    {"if": {"properties": {"kind": {"const": "backtest"}}}, "then": {"required": ["metrics", "probability_metrics", "predictions", "data_source", "status"]}},
+    {"if": {"properties": {"kind": {"const": "comparison"}}}, "then": {"required": ["errors", "account_id", "platform"]}}
+  ],
+  "$defs": {
+    "features": {"type": "object", "required": ["duration_seconds", "cut_rate", "title_length", "text_length", "question_count", "hashtag_count"], "properties": {"duration_seconds": {"type": "number", "exclusiveMinimum": 0}, "cut_rate": {"type": "number", "minimum": 0}, "title_length": {"type": "number", "minimum": 0}, "text_length": {"type": "number", "minimum": 0}, "question_count": {"type": "number", "minimum": 0}, "hashtag_count": {"type": "number", "minimum": 0}}},
+    "event": {"type": "object", "required": ["probability", "status", "threshold_views", "baseline_probability"], "properties": {"probability": {"type": ["number", "null"], "minimum": 0, "maximum": 1}, "threshold_views": {"type": "number", "minimum": 0}, "baseline_probability": {"type": "number", "minimum": 0, "maximum": 1}}},
+    "forecast": {"type": "object", "required": ["point", "interval", "nominal_coverage", "historical_median_baseline", "events"], "properties": {"point": {"type": "number", "minimum": 0}, "interval": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"type": "number", "minimum": 0}}, "nominal_coverage": {"const": 0.9}, "events": {"type": "object", "required": ["over_3x_median", "over_5x_median"], "additionalProperties": {"$ref": "#/$defs/event"}}}}
+  }
+}
